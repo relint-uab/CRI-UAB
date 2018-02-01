@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">Centre for International Relations UAB</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!-- ******** PAGE NAMES ******** -->
+
+    <string name="settings_name">Settings</string>
+    <string name="about_name">About</string>
+
+    <string name="university_name">University</string>
+    <string name="unews_name">News</string>
+    <string name="ucourse_catalog_name">Course Catalog</string>
+    <string name="ugrading_system_name">Grading System</string>
+    <string name="uacademic_calendar_name">Academic Calendar</string>
+    <string name="udocuments_name">Documents</string>
+    <string name="ucontact_name">Contact University</string>
+
+    <string name="campus_name">Campus</string>
+    <string name="cinformation_name">Campus Information</string>
+    <string name="dregulations_name">Dormitory Regulations</string>
+    <string name="dcontact_name">Contact Dormitory</string>
+
+    <string name="others_name">Others</string>
+    <string name="oarriving_in_alba_name">Arriving in Alba Iulia</string>
+    <string name="ovisa_requirements">Visa Requirements</string>
+    <string name="ohealth_and_insurance_name">Health Care and Insurance</string>
+    <string name="otraveling_name">Travelling</string>
+
+    <string name="terms_of_use">Terms of Use</string>
+
+    <!-- **************************************************************************************************************************** -->
+    <!-- ******************************************************** MAIN PAGES ******************************************************** -->
+    <!-- **************************************************************************************************************************** -->
+
+    <!-- ******** MAIN PAGE ******** -->
+    <!-- ******** SHOW NEWS ******** -->
+    <string name="post_title_text">Post title</string>
+    <string name="post_content_text">Post content</string>
+    <string name="date_text">7.11.2017</string>
+
+    <!-- ******** SPLASH SCREEN ******** -->
+    <string name="uab_logo_white">uab_logo_white</string>
+    <string name="uab_copyright">UAB Copyright © 2018</string>
+    <string name="centre_of_international_relations">Centre for International Relations</string>
+
+    <!-- *************************************************************************************** -->
+    <!-- *********** DORMITORY ***************************************************************** -->
+    <!-- *************************************************************************************** -->
+
+    <!-- ******** CAMPUS INFORMATION ******** -->
+    <string name="information_paragraph_0">1 Decembrie 1918 University of Alba Iulia</string>
+    <string name="information_paragraph_1">\u0009 UAB is first and foremost an institution of learning and teaching, committed to serving the needs of society. Our campus community reflects and is a part of a society comprising all races, creeds and social circumstances. The successful conduct of the university"s affairs requires that every member of the university community acknowledge and practice the following principles:</string>
+    <string name="information_paragraph_2">\u2022 We affirm the inherent dignity in all of us, and we strive to maintain a climate of justice marked by respect for each other. We will endeavor to foster mutual understanding among the many parts of our whole.</string>
+    <string name="information_paragraph_3">\u2022 We promote open expression of our individuality and our diversity within the bounds of courtesy, sensitivity and respect.</string>
+    <string name="information_paragraph_4">\u2022 We take pride in our various achievements, and we celebrate our differences.</string>
+    <string name="information_paragraph_5">\u2022 We will strive to build a true community of spirit and purpose based on mutual respect.</string>
+
+    <string name="dormitory_information_paragraph_0">Residence Halls</string>
+    <string name="dormitory_information_paragraph_1">\u0009 The University has 4 modern Student Residence Halls, with a total capacity of 948 places. The standard facilities and appliances in each Residence Hall include triple bed rooms with modern furniture, bathroom, refrigerator, TV, Internet connection, a launderette, a multifunctional hall, study rooms and kitchens with gas stoves and electric hoods.</string>
+    <string name="dormitory_information_paragraph_2">\u0009 The cost of accommodation in the Student Residence Halls is 200 lei (approx. 44 Euro)/person/month. The Centre for International Relations and the Student Services office at "1 Decembrie 1918" University of Alba Iulia will help you apply for accommodation.</string>
+    <string name="dormitory_information_paragraph_3">\u0009 Upon request, we can provide assistance to international students who want to rent accommodation in an off-campus apartment. Current real estate market rates will apply (ranging from 125 Euro/month for a studio to 200 euro/month for a 3-room apartment).</string>
+    <string name="dormitory_information_paragraph_4">\u0009 The University also has a Guest House with 32 rooms (studios and apartments equipped with bathroom, refrigerator and TV), mainly used to accommodate professors from Romania and abroad, as well as delegates for scientific events organised by the University.</string>
+    <string name="dormitory_information_paragraph_5">\u0009 The "Gaudeamus" International Study and Conference Centre is the most recently-built complex of the University, designed to host most of its national and international scientific and cultural events. It includes accommodation facilities, conference and lecture rooms with a spectacular view to the green surroundings of Alba Iulia.</string>
+
+    <string name="restaurant_information_paragraph_0">The University Restaurant</string>
+    <string name="restaurant_information_paragraph_1">\u0009 Students can have lunch at the University Restaurant located on campus with the following facilities: a lunch room with 200 seats, 2 cocktail rooms for special occasions (social events, conferences, and official meetings) with 39 seats; an automatic line for preparing food with modern kitchen appliances. The Restaurant also offers lunch à la carte.</string>
+    <string name="restaurant_information_paragraph_2">\u0009 The University has a snack bar with an open-air terrace (during summer time), as well as outdoor recreational areas within the historical grounds of Alba Iulia Fortress.</string>
+    <string name="restaurant_information_paragraph_3">\u0009 The University Restaurant provides lunch on a regular basis on week days; and breakfast and dinner on request only. A 3-course menu costs approx. 15 lei (3.3 Euro).</string>
+
+
+    <!-- *************************************************************************************** -->
+    <!-- ************ USER ********************************************************************* -->
+    <!-- *************************************************************************************** -->
+
+    <!-- ******** USER AUTHENTICATE ******** -->
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+
+
+    <!-- ******** USER FORGOT PASSWORD ******** -->
+    <string name="forgot_password_info">Please insert your email account for reset password</string>
+    <string name="reset_pass_text">Reset password</string>
+
+
+    <!-- ******** USER PROFILE ******** -->
+    <string name="cover_text">Cover image</string>
+
+    <string name="first_name">First name</string>
+    <string name="first_name_row">First name:</string>
+
+    <string name="last_name">Last name</string>
+    <string name="last_name_row">Last name:</string>
+
+    <string name="gender_row">Gender:</string>
+
+    <string name="date_of_birth_row">Date of birth:</string>
+
+    <string name="university_row">University:</string>
+
+    <string name="country">Country</string>
+    <string name="country_row">Country:</string>
+
+    <string name="display_email">user@email.com</string>
+
+    <!-- ******** USER REGISTER ******** -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="prompt_repassword">Confirm password</string>
+    <string name="action_sign_up">Sign up</string>
+
+
+    <!-- ******** USER WELCOME ******** -->
+    <string name="welcome_text">Welcome to Erasmus+</string>
+    <string name="university_name_welcome">PWSZ w Pile</string>
+    <string name="btnAuthenticate_text">Login</string>
+    <string name="btnRegister_text">Create Account</string>
+    <string name="welcome_terms_of_use">By continuing, you agree to the Erasmus+ PWSZ Terms of Services.</string>
+
+    <!-- ******** USER EDIT PAGES ******** -->
+    <string name="country_1">Belgium</string>
+    <string name="country_2">Bulgaria</string>
+    <string name="country_3">Czech Republic</string>
+    <string name="country_4">Latvia</string>
+    <string name="country_5">Lithuania</string>
+    <string name="country_6">Macedonia</string>
+    <string name="country_7">Romania</string>
+    <string name="country_8">Slovakia</string>
+    <string name="country_9">Spain</string>
+    <string name="country_10">Turkey</string>
+    <string name="country_0">Other Country</string>
+
+    <string name="university_1">"1 Decembrie 1918" University in Alba Iulia</string>
+    <string name="university_2">Babes-Bolyai University Cluj-Napoca</string>
+    <string name="university_3">Bingol Universitesi</string>
+    <string name="university_4">Euskal Herriko Unibertsitatea</string>
+    <string name="university_5">Istanbul Aydin University</string>
+    <string name="university_6">Izmir University</string>
+    <string name="university_7">Haute Ecole de la Province de Liege</string>
+    <string name="university_8">Liepaja University</string>
+    <string name="university_9">Matej Bel University in Banska Bystrica</string>
+    <string name="university_10">Mehmet Akif Ersoy University</string>
+    <string name="university_11">Mustafa Kemal University</string>
+    <string name="university_12">National Sports Academy "Vassil Levski"</string>
+    <string name="university_13">Nevsehir Haci Bektas Veli University</string>
+    <string name="university_14">Northern Lithuania College</string>
+    <string name="university_15">Pavol Jozef Safarik University in Kosice</string>
+    <string name="university_16">Politehnica University Timisoara</string>
+    <string name="university_17">Romanian American University</string>
+    <string name="university_18">Suleyman Demirel University</string>
+    <string name="university_19">The Catholic University in Ruzomberok</string>
+    <string name="university_20">Tomas Bata University in Zlin</string>
+    <string name="university_21">University American College Skopje</string>
+    <string name="university_22">University of  A Coruna</string>
+    <string name="university_23">Universidad Del Pais Vasco</string>
+    <string name="university_24">University of  the Balearic Islands</string>
+    <string name="university_25">University of  Zilina</string>
+    <string name="university_26">Vysoka Skola Danubius</string>
+    <string name="university_27">Other university</string>
+
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+
+    <string name="gender_text">Edit Gender</string>
+    <string name="first_name_text">Edit First name</string>
+    <string name="last_name_text">Edit Last name</string>
+    <string name="university_text">Edit University</string>
+
+    <!-- *************************************************************************************** -->
+    <!-- ************ OTHER XML **************************************************************** -->
+    <!-- *************************************************************************************** -->
+
+    <!-- ******** NAV_HEADER_MAIN ******** -->
+    <string name="welcome_name">Welcome, John Doe</string>
+    <string name="profile_email">user@email.com</string>
+    <string name="sign_out">Sign out</string>
+
+    <!-- ******** USED MORE THEN ONCE ******** -->
+    <string name="logo_text">CIR UAB logo</string>
+    <string name="empty">Empty</string>
+    <string name="date">date format 31.01.2017</string>
+    <string name="fetch_text">Fetch image</string>
+
+    <string name="terms_of_use_content">Terms of Service ("Terms")
+
+        Last updated: November 15, 2017
+
+        Please read these Terms of Service ("Terms", "Terms of Service") carefully before using the http://www.pwsz.pila.pl/en website (the "Service") operated by Erasmus PWSZ Pila ("us", "we", or "our").
+
+        Your access to and use of the Service is conditioned on your acceptance of and compliance with these Terms. These Terms apply to all visitors, users and others who access or use the Service.
+
+        By accessing or using the Service you agree to be bound by these Terms. If you disagree with any part of the terms then you may not access the Service. Terms of Service created by TermsFeed for Erasmus PWSZ Pila.
+
+        Accounts
+
+        When you create an account with us, you must provide us information that is accurate, complete, and current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate termination of your account on our Service.
+
+        You are responsible for safeguarding the password that you use to access the Service and for any activities or actions under your password, whether your password is with our Service or a third-party service.
+
+        You agree not to disclose your password to any third party. You must notify us immediately upon becoming aware of any breach of security or unauthorized use of your account.
+
+        Links To Other Web Sites
+
+        Our Service may contain links to third-party web sites or services that are not owned or controlled by Erasmus PWSZ Pila.
+
+        Erasmus PWSZ Pila has no control over, and assumes no responsibility for, the content, privacy policies, or practices of any third party web sites or services. You further acknowledge and agree that Erasmus PWSZ Pila shall not be responsible or liable, directly or indirectly, for any damage or loss caused or alleged to be caused by or in connection with use of or reliance on any such content, goods or services available on or through any such web sites or services.
+
+        We strongly advise you to read the terms and conditions and privacy policies of any third-party web sites or services that you visit.
+
+        Termination
+
+        We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+
+        All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+        We may terminate or suspend your account immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.
+
+        Upon termination, your right to use the Service will immediately cease. If you wish to terminate your account, you may simply discontinue using the Service.
+
+        All provisions of the Terms which by their nature should survive termination shall survive termination, including, without limitation, ownership provisions, warranty disclaimers, indemnity and limitations of liability.
+
+        Governing Law
+
+        These Terms shall be governed and construed in accordance with the laws of Poland, without regard to its conflict of law provisions.
+
+        Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining provisions of these Terms will remain in effect. These Terms constitute the entire agreement between us regarding our Service, and supersede and replace any prior agreements we might have between us regarding the Service.
+
+        Changes
+
+        We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a revision is material we will try to provide at least 30 days notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.
+
+        By continuing to access or use our Service after those revisions become effective, you agree to be bound by the revised terms. If you do not agree to the new terms, please stop using the Service.
+
+        Contact Us
+
+        If you have any questions about these Terms, please contact us.</string>
+
+</resources>

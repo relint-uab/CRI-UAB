@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.alexa.centreforinternationalrelationsuab.campus.CInformation"
+    android:orientation="vertical"
+    android:background="?attr/colorPrimary"
+    tools:ignore="Overdraw">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <!-- INFORMATIONS -->
+            <TextView
+                android:id="@+id/information_p_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_0"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/information_p_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/information_p_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_2"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/information_p_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_3"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/information_p_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_4"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/information_p_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/information_paragraph_5"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+
+            <!-- DORMITORY -->
+            <TextView
+                android:id="@+id/dormitory_information_p_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dormitory_information_paragraph_0"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/dormitory_information_p_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/dormitory_information_paragraph_1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"
+                />
+            <TextView
+                android:id="@+id/dormitory_information_p_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/dormitory_information_paragraph_2"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/dormitory_information_p_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/dormitory_information_paragraph_3"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/dormitory_information_p_4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="@string/dormitory_information_paragraph_4"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/dormitory_information_p_5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="@string/dormitory_information_paragraph_5"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+
+            <!-- RESTAURANT -->
+            <TextView
+                android:id="@+id/restaurant_information_p_0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_information_paragraph_0"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="bold"
+                android:layout_marginTop="15dp"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/restaurant_information_p_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_information_paragraph_1"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/restaurant_information_p_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_information_paragraph_2"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+            <TextView
+                android:id="@+id/restaurant_information_p_3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_information_paragraph_3"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textIsSelectable="true"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

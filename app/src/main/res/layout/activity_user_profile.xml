@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.alexa.centreforinternationalrelationsuab.user.UserProfile"
+    android:background="@drawable/gradient">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:foreground="@drawable/cast_expanded_controller_bg_gradient_light"
+                android:scaleType="centerCrop"
+                android:src="@drawable/cover"
+                android:contentDescription="@string/cover_text" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/save_btn_gradient">
+                <Button
+                    android:id="@+id/save_profile"
+                    android:layout_width="28dp"
+                    android:layout_height="28dp"
+                    android:layout_gravity="end"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ic_save"
+                    tools:layout_editor_absoluteX="372dp"
+                    tools:layout_editor_absoluteY="14dp" />
+            </android.support.v7.widget.Toolbar>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:padding="16dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:src="@drawable/logo"
+                    app:civ_border_color="?android:attr/textColorPrimary"
+                    app:civ_border_width="1dp" />
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/display_firstname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/first_name"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textStyle="bold"/>
+                    <TextView
+                        android:id="@+id/display_lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="4dp"
+                        android:text="@string/last_name"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textStyle="bold"/>
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/display_email"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="@string/display_email"
+                    android:textSize="12sp"
+                    android:textColor="?android:attr/textColorPrimary"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@color/windowBackground">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/firstname_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="300dp"
+                android:text="@string/first_name_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/display_firstname_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="300dp"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/lastname_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/last_name_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/firstname_row" />
+
+            <TextView
+                android:id="@+id/display_lastname_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_firstname_row" />
+
+            <TextView
+                android:id="@+id/gender_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/gender_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/lastname_row" />
+
+            <TextView
+                android:id="@+id/display_gender_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_lastname_row" />
+
+            <TextView
+                android:id="@+id/date_of_birth_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/date_of_birth_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/gender_row" />
+
+            <TextView
+                android:id="@+id/display_date_of_birth_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_gender_row" />
+
+            <TextView
+                android:id="@+id/university_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/university_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/date_of_birth_row" />
+
+            <TextView
+                android:id="@+id/display_university_row"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="35dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginTop="24dp"
+                android:lines="3"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_date_of_birth_row" />
+
+            <TextView
+                android:id="@+id/country_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="52dp"
+                android:text="@string/country_row"
+                android:textColor="?android:attr/textColorPrimary"
+                android:textStyle="italic"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/university_row" />
+
+            <TextView
+                android:id="@+id/display_country_row"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="24dp"
+                android:text="@string/empty"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/display_university_row" />
+
+            <Button
+                android:id="@+id/btn_edit_firstname"
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:background="@drawable/ic_edit"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="306dp"
+                app:layout_constraintStart_toEndOf="@+id/display_firstname_row"
+                app:layout_constraintTop_toTopOf="parent"
+                />
+
+
+            <Button
+                android:id="@+id/btn_edit_lastname"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/ic_edit"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@+id/display_lastname_row"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_firstname"
+                />
+
+            <Button
+                android:id="@+id/btn_edit_gender"
+                android:layout_width="14dp"
+                android:layout_height="14dp"
+                android:background="@drawable/ic_edit"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                app:layout_constraintStart_toEndOf="@+id/display_gender_row"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_lastname"
+                />
+
+
+            <Button
+                android:id="@+id/btn_edit_country"
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="60dp"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintStart_toEndOf="@+id/display_country_row"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_university" />
+
+            <Button
+                android:id="@+id/btn_edit_university"
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintStart_toEndOf="@+id/display_university_row"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_dateofbirth" />
+
+            <Button
+                android:id="@+id/btn_edit_dateofbirth"
+                android:layout_width="12dp"
+                android:layout_height="14dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/ic_edit"
+                app:layout_constraintStart_toEndOf="@+id/display_date_of_birth_row"
+                app:layout_constraintTop_toBottomOf="@+id/btn_edit_gender" />
+
+        </android.support.constraint.ConstraintLayout>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

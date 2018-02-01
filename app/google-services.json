@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "852890588234",
+    "firebase_url": "https://cir-uab.firebaseio.com",
+    "project_id": "cir-uab",
+    "storage_bucket": "cir-uab.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:852890588234:android:03698ed06f799b21",
+        "android_client_info": {
+          "package_name": "com.example.alexa.centreforinternationalrelationsuab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "852890588234-c8m6bu5d4fomp6rq4qu9r9koch0ffcnb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alexa.centreforinternationalrelationsuab",
+            "certificate_hash": "026b5971052082f28cea5a754713a35243860967"
+          }
+        },
+        {
+          "client_id": "852890588234-iakpv2dccl2civop66q3rbf2vim4urns.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCaVJjn4ZFtMw7meKaElyrg5KFDRLucOfU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "852890588234-iakpv2dccl2civop66q3rbf2vim4urns.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
