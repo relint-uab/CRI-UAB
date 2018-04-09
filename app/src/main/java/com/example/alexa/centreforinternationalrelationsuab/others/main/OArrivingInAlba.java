@@ -3,6 +3,8 @@ package com.example.alexa.centreforinternationalrelationsuab.others.main;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
+import com.example.alexa.centreforinternationalrelationsuab.R;
+
 public class OArrivingInAlba extends AppCompatActivity {
 
     @Override

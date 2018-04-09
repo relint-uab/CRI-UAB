@@ -2,19 +2,31 @@
 
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/splash_layout"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
 tools:context="com.example.alexa.centreforinternationalrelationsuab.SplashScreen"
-android:background="@drawable/gradient_splash">
+android:background="@drawable/animated_gradient">
 
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/textViewCRI"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/logo"
+        android:elevation="16dp"
+        android:contentDescription="@string/uab_logo_white" />
 
     <TextView
-        android:id="@+id/textViewCopyright"
+        android:id="@+id/textViewCRI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/textViewCRI"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="190dp"
+        android:layout_centerVertical="true"
         android:text="@string/centre_of_international_relations"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat"
@@ -22,27 +34,30 @@ android:background="@drawable/gradient_splash">
         android:textColorLink="@android:color/darker_gray"
         android:textSize="16sp" />
 
-<TextView
-    android:id="@+id/textViewCRI"
-    android:layout_width="fill_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:layout_alignParentStart="true"
-    android:layout_marginBottom="15dp"
-    android:gravity="center_horizontal"
-    android:text="@string/uab_copyright"
-    android:textColor="@android:color/darker_gray"
-    android:textSize="12sp" />
+    <ImageView
+        android:id="@+id/erasmus_logo"
+        android:layout_width="120dp"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:src="@drawable/erasmus_logo"
+        android:elevation="16dp"
+        android:layout_below="@+id/textViewCRI"
+        android:contentDescription="erasmus_logo" />
 
-<ImageView
-    android:id="@+id/imageView"
-    android:layout_width="150dp"
-    android:layout_height="150dp"
-    android:layout_above="@+id/textViewCopyright"
-    android:layout_centerHorizontal="true"
-    android:layout_marginBottom="16dp"
-    android:src="@drawable/logo"
-    android:contentDescription="@string/uab_logo_white" />
+    <TextView
+        android:id="@+id/textViewCopyright"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerVertical="false"
+        android:layout_marginBottom="8dp"
+        android:gravity="center_horizontal"
+        android:text="@string/uab_copyright"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="12sp" />
+
+
 
 
 

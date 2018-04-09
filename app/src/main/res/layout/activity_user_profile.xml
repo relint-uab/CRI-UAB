@@ -89,7 +89,6 @@
         </RelativeLayout>
 
     </android.support.design.widget.AppBarLayout>
-
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -111,7 +110,8 @@
                 android:textColor="?android:attr/textColorPrimary"
                 android:textStyle="italic"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                app:layout_constraintTop_toTopOf="parent"
+                android:elevation="8dp"/>
 
             <TextView
                 android:id="@+id/display_firstname_row"
@@ -256,6 +256,7 @@
                 android:layout_marginTop="306dp"
                 app:layout_constraintStart_toEndOf="@+id/display_firstname_row"
                 app:layout_constraintTop_toTopOf="parent"
+                android:elevation="8dp"
                 />
 
 
@@ -314,5 +315,4 @@
 
         </android.support.constraint.ConstraintLayout>
     </LinearLayout>
-
 </android.support.design.widget.CoordinatorLayout>

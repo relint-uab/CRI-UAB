@@ -32,10 +32,9 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity"
-            android:label="@string/app_name"
+            android:name=".SliderActivity"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme.NoActionBar" />
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".TermsOfUse"
             android:label="@string/terms_of_use"
@@ -65,11 +64,33 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main_international_students"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainErasmus"
+            android:label="@string/title_activity_main_erasmus"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainErasmusAcademic"
+            android:label="@string/title_activity_main_erasmus_academic"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".user.SelectAccountType"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".campus.CInformation"
             android:label="@string/cinformation_name"
             android:screenOrientation="portrait" />
         <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
-        <activity android:name=".others.main.OArrivingInAlba"></activity>
+        <activity android:name=".others.main.OArrivingInAlba" />
+        <activity android:name=".GradingSystem" />
+        <activity
+            android:name=".others.main.Travel"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity android:name=".university.Contact"></activity>
     </application>
 
 </manifest>

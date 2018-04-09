@@ -2,6 +2,8 @@ package com.example.alexa.centreforinternationalrelationsuab;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
@@ -24,6 +26,8 @@ import android.widget.Toast;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.alexa.centreforinternationalrelationsuab.campus.CInformation;
+import com.example.alexa.centreforinternationalrelationsuab.others.main.Travel;
+import com.example.alexa.centreforinternationalrelationsuab.university.Contact;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserProfile;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserWelcome;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -34,9 +38,12 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.squareup.picasso.Picasso;
 
 import java.util.Objects;
+
+import dmax.dialog.SpotsDialog;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
 
@@ -44,7 +51,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private TextView txtProfileName;
     private boolean doubleBackToExitPressedOnce = false;
     private RecyclerView recyclerView;
-    private ProgressDialog mProgress;
+    private SpotsDialog mProgress;
 
     private FirebaseAuth mAuth;
     private DatabaseReference myRef;
@@ -57,14 +64,14 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         mAuth = FirebaseAuth.getInstance();
 
         // Progress dialog Loading page
-        mProgress = new ProgressDialog(this);
-        mProgress.setMessage("         loading...");
+        mProgress = new SpotsDialog(this, R.style.Loading);
+        mProgress.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mProgress.show();
         Runnable progressRunnable = new Runnable() {
 
             @Override
             public void run() {
-                mProgress.cancel();
+                mProgress.dismiss();
             }
         };
 
@@ -106,8 +113,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
                 if (Objects.equals(display_name, "User")) {
                     txtProfileName.setText("Welcome, " + display_name);
-                    startActivity(new Intent(getApplicationContext(), UserProfile.class));
-                    Toast.makeText(MainActivity.this, "Please complete your profile data!", Toast.LENGTH_LONG).show();
+                    Intent intent = new Intent(getApplicationContext(), UserProfile.class);
+                    intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                    startActivity(intent);
+                    StyleableToast.makeText(getApplicationContext(), "Please complete your profile data!", R.style.errorToast).show();
+                    //Toast.makeText(MainActivity.this, "Please complete your profile data!", Toast.LENGTH_LONG).show();
                 } else {
                     txtProfileName.setText("Welcome, " + display_name);
                 }
@@ -126,9 +136,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         signout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+
                 mAuth.signOut();
-                finish();
+                StyleableToast.makeText(getApplicationContext(), "Signed out!", R.style.infoToast).show();
+
+
                 startActivity(new Intent(getApplicationContext(), UserWelcome.class));
+                finish();
             }
         });
 
@@ -137,7 +151,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         open_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(getApplicationContext(), UserProfile.class));
+                Intent iProfile = new Intent(getApplicationContext(), UserProfile.class);
+                iProfile.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                startActivity(iProfile);
+
             }
         });
 
@@ -221,10 +238,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return;
         }
         this.doubleBackToExitPressedOnce = true;
-        Toast.makeText(this, "Please press BACK again to exit",
-                Toast.LENGTH_SHORT).show();
-
-    }
+        StyleableToast.makeText(getApplicationContext(), "Please press BACK again to exit", R.style.infoToast).show();
+            }
 
     @SuppressWarnings("StatementWithEmptyBody")
     @Override
@@ -232,13 +247,18 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_news) {
-            Intent i = new Intent(MainActivity.this, MainActivity.class);
+        if (id == R.id.nav_traveling) {
+            Intent i = new Intent(MainActivity.this, Travel.class);
             startActivity(i);
 
             return true;
         }else if (id == R.id.nav_information) {
             Intent i = new Intent(MainActivity.this, CInformation.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_ucontact) {
+            Intent i = new Intent(MainActivity.this, Contact.class);
             startActivity(i);
 
             return true;
@@ -248,4 +268,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
+
+
 }

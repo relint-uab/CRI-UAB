@@ -1,6 +1,5 @@
 package com.example.alexa.centreforinternationalrelationsuab.user;
 
-import android.annotation.SuppressLint;
 import android.app.AlertDialog;
 import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
@@ -24,6 +23,8 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.alexa.centreforinternationalrelationsuab.MainActivity;
+import com.example.alexa.centreforinternationalrelationsuab.MainErasmus;
+import com.example.alexa.centreforinternationalrelationsuab.MainErasmusAcademic;
 import com.example.alexa.centreforinternationalrelationsuab.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
@@ -37,14 +38,17 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 import com.squareup.picasso.Picasso;
 import com.theartofdev.edmodo.cropper.CropImage;
+
+import java.util.Objects;
 
 import de.hdodenhof.circleimageview.CircleImageView;
 
 public class UserProfile extends AppCompatActivity {
 
-    private DatabaseReference mUserDatabase;
+    private DatabaseReference mUserDatabase, mAccountType;
     private FirebaseUser mCurrentUser;
     private StorageReference mImageStorage;
 
@@ -64,10 +68,9 @@ public class UserProfile extends AppCompatActivity {
 
     private DatePickerDialog.OnDateSetListener mDateOfBirthSetListner;
 
-    private final Context c = this;
+    final Context c = this;
     private static final int GALLERY_PICK = 1;
 
-    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -94,13 +97,13 @@ public class UserProfile extends AppCompatActivity {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                @SuppressWarnings("ConstantConditions") String imageProfile = dataSnapshot.child("Image_Profile_URL").getValue().toString();
-                @SuppressWarnings("ConstantConditions") String firstname = dataSnapshot.child("Firstname").getValue().toString();
-                @SuppressWarnings("ConstantConditions") String lastname = dataSnapshot.child("Lastname").getValue().toString();
-                @SuppressWarnings("ConstantConditions") String gender = dataSnapshot.child("Gender").getValue().toString().trim();
-                @SuppressWarnings("ConstantConditions") String dateofbirth = dataSnapshot.child("Date_of_birth").getValue().toString();
-                @SuppressWarnings("ConstantConditions") String university = dataSnapshot.child("University").getValue().toString();
-                @SuppressWarnings("ConstantConditions") String country = dataSnapshot.child("Country").getValue().toString();
+                String imageProfile = dataSnapshot.child("Image_Profile_URL").getValue().toString();
+                String firstname = dataSnapshot.child("Firstname").getValue().toString();
+                String lastname = dataSnapshot.child("Lastname").getValue().toString();
+                String gender = dataSnapshot.child("Gender").getValue().toString();
+                String dateofbirth = dataSnapshot.child("Date_of_birth").getValue().toString();
+                String university = dataSnapshot.child("University").getValue().toString();
+                String country = dataSnapshot.child("Country").getValue().toString();
                 String email = mCurrentUser.getEmail();
 
                 mDisplayFirstname.setText(firstname);
@@ -121,19 +124,57 @@ public class UserProfile extends AppCompatActivity {
             }
         });
 
+
         Button save_profile = findViewById(R.id.save_profile);
         save_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(UserProfile.this, MainActivity.class);
-                i.setFlags(i.getFlags() | Intent.FLAG_ACTIVITY_CLEAR_TOP);
-                startActivity(i);
+                StyleableToast.makeText(getApplicationContext(), "Profile saved", R.style.successToast).show();
+                //Toast.makeText(UserProfile.this, "Profile saved", Toast.LENGTH_SHORT).show();
+
+                String current_uid = mCurrentUser.getUid();
+                mAccountType = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid).child("Account_type");
+
+                mAccountType.addListenerForSingleValueEvent(new ValueEventListener() {
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+                        String Account_type = dataSnapshot.getValue().toString();
+
+                        if (Objects.equals(Account_type, "Erasmus student")){
+                            Intent i = new Intent(getApplicationContext(), MainErasmus.class);
+                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(i);
+                            finish();
+                        } else if (Objects.equals(Account_type, "Erasmus academic")) {
+                            Intent i = new Intent(getApplicationContext(), MainErasmusAcademic.class);
+                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(i);
+                            finish();
+                        } else if (Objects.equals(Account_type, "International student")){
+                            Intent i = new Intent(getApplicationContext(), MainActivity.class);
+                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(i);
+                            finish();
+                        } else {
+                            Intent i = new Intent(getApplicationContext(), SelectAccountType.class);
+                            i.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+                            startActivity(i);
+                            finish();
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(DatabaseError databaseError) {
+
+                    }
+                });
             }
         });
 
 
+
 // START EDIT FIRSTNAME FIELD
-        @SuppressLint("CutPasteId") TextView btn_edit_firstname = findViewById(R.id.display_firstname_row);
+        TextView btn_edit_firstname = mDisplayFirstnameRow;
         btn_edit_firstname.setOnClickListener(new View.OnClickListener() {
 
             private DatabaseReference mUserDatabase;
@@ -141,7 +182,7 @@ public class UserProfile extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 LayoutInflater layoutInflaterEditFirstname = LayoutInflater.from(c);
-                @SuppressLint("InflateParams") View ViewFirstname = layoutInflaterEditFirstname.inflate(R.layout.edit_firstname_dialog, null);
+                View ViewFirstname = layoutInflaterEditFirstname.inflate(R.layout.edit_firstname_dialog, null);
                 AlertDialog.Builder alertDialogEditFirstname = new AlertDialog.Builder(c);
                 alertDialogEditFirstname.setView(ViewFirstname);
 
@@ -149,7 +190,7 @@ public class UserProfile extends AppCompatActivity {
                 String current_uid = mCurrentUser.getUid();
                 mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
-                final EditText userInputDialogEditFirstname = ViewFirstname.findViewById(R.id.firstnameInputDialog);
+                final EditText userInputDialogEditFirstname = (EditText) ViewFirstname.findViewById(R.id.firstnameInputDialog);
                 alertDialogEditFirstname
                         .setCancelable(false)
                         .setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -187,11 +228,11 @@ public class UserProfile extends AppCompatActivity {
 
                 // START edit lastname dialog
                 LayoutInflater layoutInflaterEditLastname = LayoutInflater.from(c);
-                @SuppressLint("InflateParams") View ViewLastname = layoutInflaterEditLastname.inflate(R.layout.edit_lastname_dialog, null);
+                View ViewLastname = layoutInflaterEditLastname.inflate(R.layout.edit_lastname_dialog, null);
                 AlertDialog.Builder alertDialogEditLastname = new AlertDialog.Builder(c);
                 alertDialogEditLastname.setView(ViewLastname);
 
-                final EditText userInputDialogEditLastname = ViewLastname.findViewById(R.id.lastnameInputDialog);
+                final EditText userInputDialogEditLastname = (EditText) ViewLastname.findViewById(R.id.lastnameInputDialog);
                 alertDialogEditLastname
                         .setCancelable(false)
                         .setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -225,11 +266,11 @@ public class UserProfile extends AppCompatActivity {
                 mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
                 LayoutInflater layoutInflaterEditGender = LayoutInflater.from(c);
-                @SuppressLint("InflateParams") final View ViewGender = layoutInflaterEditGender.inflate(R.layout.edit_gender_dialog, null);
+                final View ViewGender = layoutInflaterEditGender.inflate(R.layout.edit_gender_dialog, null);
                 AlertDialog.Builder alertDialogEditGender = new AlertDialog.Builder(c);
                 alertDialogEditGender.setView(ViewGender);
 
-                final RadioGroup RadioGroupGender = ViewGender.findViewById(R.id.radio_group_gender);
+                final RadioGroup RadioGroupGender = (RadioGroup) ViewGender.findViewById(R.id.radio_group_gender);
 
                 alertDialogEditGender
                         .setCancelable(false)
@@ -237,8 +278,8 @@ public class UserProfile extends AppCompatActivity {
 
                             public void onClick(DialogInterface dialogBox, int id) {
                                 int selectedId = RadioGroupGender.getCheckedRadioButtonId();
-                                RadioButton RadioButtonGender= ViewGender.findViewById(selectedId);
-                                Toast.makeText(UserProfile.this,RadioButtonGender.getText(), Toast.LENGTH_SHORT).show();
+                                RadioButton RadioButtonGender=(RadioButton)ViewGender.findViewById(selectedId);
+                                Toast.makeText(UserProfile.this,RadioButtonGender.getText(),Toast.LENGTH_SHORT).show();
                                 mUserDatabase.child("Gender").setValue(RadioButtonGender.getText());
                             }
                         })
@@ -266,10 +307,9 @@ public class UserProfile extends AppCompatActivity {
 
                 DatePickerDialog dialog = new DatePickerDialog(
                         UserProfile.this,
-                        android.R.style.Theme_Holo_Dialog_MinWidth,
+                        android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         mDateOfBirthSetListner,
                         year, month, day);
-                //noinspection ConstantConditions
                 dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
                 dialog.show();
 
@@ -296,7 +336,7 @@ public class UserProfile extends AppCompatActivity {
                 mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
                 LayoutInflater layoutInflaterEditUniversity = LayoutInflater.from(c);
-                @SuppressLint("InflateParams") final View ViewUniversity = layoutInflaterEditUniversity.inflate(R.layout.edit_university_dialog, null);
+                final View ViewUniversity = layoutInflaterEditUniversity.inflate(R.layout.edit_university_dialog, null);
                 AlertDialog.Builder alertDialogEditUniversity = new AlertDialog.Builder(c);
                 alertDialogEditUniversity.setView(ViewUniversity);
 
@@ -309,7 +349,7 @@ public class UserProfile extends AppCompatActivity {
                             public void onClick(DialogInterface dialogBox, int id) {
                                 int selectedId = RadioGroupUniversity.getCheckedRadioButtonId();
                                 RadioButton RadioButtonUniversity = ViewUniversity.findViewById(selectedId);
-                                Toast.makeText(UserProfile.this,RadioButtonUniversity.getText(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(UserProfile.this,RadioButtonUniversity.getText(),Toast.LENGTH_SHORT).show();
                                 mUserDatabase.child("University").setValue(RadioButtonUniversity.getText());
                             }
                         })
@@ -338,11 +378,11 @@ public class UserProfile extends AppCompatActivity {
                 mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
                 LayoutInflater layoutInflaterEditCountry = LayoutInflater.from(c);
-                @SuppressLint("InflateParams") final View ViewCountry = layoutInflaterEditCountry.inflate(R.layout.edit_country_dialog, null);
+                final View ViewCountry = layoutInflaterEditCountry.inflate(R.layout.edit_country_dialog, null);
                 AlertDialog.Builder alertDialogEditCountry = new AlertDialog.Builder(c);
                 alertDialogEditCountry.setView(ViewCountry);
 
-                final RadioGroup RadioGroupCountry = ViewCountry.findViewById(R.id.radio_group_country);
+                final RadioGroup RadioGroupCountry = (RadioGroup) ViewCountry.findViewById(R.id.radio_group_country);
 
                 alertDialogEditCountry
                         .setCancelable(false)
@@ -350,7 +390,7 @@ public class UserProfile extends AppCompatActivity {
                             public void onClick(DialogInterface dialogBox, int id) {
                                 int selectedId = RadioGroupCountry.getCheckedRadioButtonId();
                                 RadioButton RadioButtonCountry = ViewCountry.findViewById(selectedId);
-                                Toast.makeText(UserProfile.this,RadioButtonCountry.getText(), Toast.LENGTH_SHORT).show();
+                                Toast.makeText(UserProfile.this,RadioButtonCountry.getText(),Toast.LENGTH_SHORT).show();
                                 mUserDatabase.child("Country").setValue(RadioButtonCountry.getText());
                             }
                         })
@@ -417,7 +457,7 @@ public class UserProfile extends AppCompatActivity {
                     public void onComplete(@NonNull Task<UploadTask.TaskSnapshot> task) {
                         if (task.isSuccessful()){
 
-                            @SuppressWarnings("ConstantConditions") String download_profile_image_url = task.getResult().getDownloadUrl().toString();
+                            String download_profile_image_url = task.getResult().getDownloadUrl().toString();
 
                             mUserDatabase.child("Image_Profile_URL").setValue(download_profile_image_url).addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
@@ -427,7 +467,6 @@ public class UserProfile extends AppCompatActivity {
                                         mProgressDialogUploadingImage.dismiss();
                                         Toast.makeText(UserProfile.this, "Upload image successful", Toast.LENGTH_SHORT).show();
                                     }
-
                                 }
                             });
 
@@ -447,5 +486,7 @@ public class UserProfile extends AppCompatActivity {
 
     }
 
+    public void onBackPressed(){
 
+    }
 }

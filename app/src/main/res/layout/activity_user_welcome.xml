@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/user_welcome"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/animated_welcome_gradient"
     tools:context="com.example.alexa.centreforinternationalrelationsuab.user.UserWelcome"
-    android:background="@drawable/gradient"
-    tools:layout_editor_absoluteY="25dp"
-    tools:ignore="Overdraw">
+    tools:ignore="Overdraw"
+    tools:layout_editor_absoluteY="25dp">
 
     <TextView
         android:id="@+id/welcome_text"
@@ -20,7 +19,7 @@
         android:layout_marginTop="8dp"
         android:text="@string/welcome_text"
         android:textColor="@color/textColorPrimary"
-        android:textSize="18sp"
+        android:textSize="28sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/logo" />
@@ -29,14 +28,18 @@
         android:id="@+id/logo"
         android:layout_width="180dp"
         android:layout_height="180dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
+        android:layout_marginBottom="8dp"
         android:layout_marginTop="76dp"
+        android:contentDescription="@string/logo_text"
+        app:layout_constraintBottom_toTopOf="@+id/welcome_terms_of_use"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo"
-        android:contentDescription="@string/logo_text" />
+        app:layout_constraintVertical_bias="0.1"
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/university"
@@ -52,48 +55,52 @@
 
     <Button
         android:id="@+id/btnAuthenticate"
-        android:layout_width="125dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginBottom="160dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:background="@drawable/btn_rounded"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple"
         android:text="@string/btnAuthenticate_text"
         android:textColor="@color/colorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/btnRegister"
-        app:layout_constraintHorizontal_bias="0.82"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <Button
         android:id="@+id/btnRegister"
-        android:layout_width="165dp"
+        android:layout_width="0dp"
         android:layout_height="35dp"
         android:layout_marginBottom="160dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="16dp"
         android:layout_marginStart="8dp"
-        android:background="@drawable/btn_rounded_transparent"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple2"
         android:text="@string/btnRegister_text"
         android:textColor="@color/textColorPrimary"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.847"
-        app:layout_constraintStart_toStartOf="parent"
-        />
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btnAuthenticate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/welcome_terms_of_use"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"
-        android:paddingLeft="80dp"
-        android:paddingRight="80dp"
+        android:layout_marginBottom="24dp"
         android:text="@string/welcome_terms_of_use"
-        android:textColor="@color/textColorPrimary"
         android:textAlignment="center"
+        android:textColor="@color/textColorPrimary"
         android:textSize="@dimen/welcome_terms_of_use"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 

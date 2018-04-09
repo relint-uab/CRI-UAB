@@ -25,71 +25,60 @@
                 android:id="@+id/radio_button_country_1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_1" />
 
             <RadioButton
                 android:id="@+id/radio_button_country_2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_2" />
             <RadioButton
                 android:id="@+id/radio_button_country_3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_3" />
 
             <RadioButton
                 android:id="@+id/radio_button_country_4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_4" />
             <RadioButton
                 android:id="@+id/radio_button_country_5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_5" />
 
             <RadioButton
                 android:id="@+id/radio_button_country_6"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_6" />
             <RadioButton
                 android:id="@+id/radio_button_country_7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_7" />
 
             <RadioButton
                 android:id="@+id/radio_button_country_8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_8" />
             <RadioButton
                 android:id="@+id/radio_button_country_9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_9" />
             <RadioButton
                 android:id="@+id/radio_button_country_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_10" />
             <RadioButton
                 android:id="@+id/radio_button_country_0"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:textColor="?android:attr/textColor"
                 android:text="@string/country_0" />
         </RadioGroup>
     </ScrollView>

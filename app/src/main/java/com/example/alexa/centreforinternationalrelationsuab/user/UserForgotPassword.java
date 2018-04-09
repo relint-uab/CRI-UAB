@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
@@ -15,6 +16,7 @@ import com.example.alexa.centreforinternationalrelationsuab.R;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
+import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 public class UserForgotPassword extends AppCompatActivity {
 
@@ -47,8 +49,11 @@ public class UserForgotPassword extends AppCompatActivity {
                 String email = inputEmail.getText().toString().trim();
 
                 if (TextUtils.isEmpty(email)) {
-                    Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
+                    StyleableToast.makeText(getApplicationContext(), "Enter your registered email address!", R.style.errorToast).show();
+                    //Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
                     return;
+                } else if (!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
+                    StyleableToast.makeText(getApplicationContext(), "Try again \n Wrong email address format!", R.style.errorToast).show();
                 }
 
                 progressBar.setVisibility(View.VISIBLE);
@@ -61,7 +66,8 @@ public class UserForgotPassword extends AppCompatActivity {
                                 if (task.isSuccessful()) {
                                     Toast.makeText(UserForgotPassword.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
                                 } else {
-                                    Toast.makeText(UserForgotPassword.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
+                                    StyleableToast.makeText(getApplicationContext(), "Failed to send reset email!", R.style.errorToast).show();
+                                    //Toast.makeText(UserForgotPassword.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
                                 }
 
                                 progressBar.setVisibility(View.GONE);

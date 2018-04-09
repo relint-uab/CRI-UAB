@@ -6,7 +6,7 @@
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorPrimaryDark</item>
         <item name="android:textColorPrimaryInverse">@color/colorPrimary</item>
-        <item name="colorControlHighlight">@color/colorControlHighlight</item>​
+        <item name="colorControlHighlight">#74c9f4</item>​
         <item name="colorControlNormal">@color/colorControlNormal</item>
         <item name="colorSwitchThumbNormal">@color/colorSwitchThumbNormal</item>
         <item name="android:colorForeground">@color/colorForeground</item>
@@ -18,15 +18,70 @@
         <item name="android:textColorHint">@color/textColorHint</item>
         <item name="android:colorBackground">@color/colorPrimary</item>
         <item name="colorControlActivated">@color/textColorPrimary</item>
+
+
     </style>
 
     <style name="AppTheme.NoActionBar">
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
+        <!-- enable window content transitions -->
+        <item name="android:windowActivityTransitions">false</item>
     </style>
 
     <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="errorToast">
+        <item name="textColor">#fff</item>
+        <item name="textSize">14sp</item>
+        <item name="colorBackground">#dcef3b3b</item>
+        <item name="solidBackground">false</item>
+        <item name="iconLeft">@drawable/ic_alert_toast</item>
+        <item name="length">LONG</item>
+        ENUM: LONG | SHORT
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="warningToast">
+        <item name="textColor">#fff</item>
+        <item name="textSize">14sp</item>
+        <item name="colorBackground">#dcfd691f</item>
+        <item name="solidBackground">false</item>
+        <item name="iconLeft">@drawable/ic_alert_toast</item>
+        <item name="length">LONG</item>
+        ENUM: LONG | SHORT
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="successToast">
+        <item name="textColor">#fff</item>
+        <item name="textSize">14sp</item>
+        <item name="colorBackground">#dc39cc34</item>
+        <item name="solidBackground">false</item>
+        <item name="iconLeft">@drawable/ic_done</item>
+        <item name="length">LONG</item>
+        ENUM: LONG | SHORT
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="infoToast">
+        <item name="textColor">#fff</item>
+        <item name="textSize">14sp</item>
+        <item name="colorBackground">#dc1f99fd</item>
+        <item name="solidBackground">false</item>
+        <item name="iconLeft">@drawable/ic_alert_toast</item>
+        <item name="length">LONG</item>
+        ENUM: LONG | SHORT
+        <item name="cornerRadius">5dp</item>
+    </style>
+
+    <style name="Loading" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Small.Inverse</item>
+        <item name="DialogTitleText">Loading…</item>
+        <item name="DialogSpotColor">#00aaf9</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
 
 </resources>

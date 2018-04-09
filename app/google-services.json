@@ -15,6 +15,14 @@
       },
       "oauth_client": [
         {
+          "client_id": "852890588234-qiq4j3vao0vo8p0k98qr2f51jkdeasmf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.alexa.centreforinternationalrelationsuab",
+            "certificate_hash": "79241d93cf1f597b4364c99651bb13e6c6b7d115"
+          }
+        },
+        {
           "client_id": "852890588234-c8m6bu5d4fomp6rq4qu9r9koch0ffcnb.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {

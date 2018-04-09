@@ -22,14 +22,12 @@
             android:id="@+id/radio_button_male"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="?android:attr/textColor"
             android:text="@string/male" />
 
         <RadioButton
             android:id="@+id/radio_button_female"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="?android:attr/textColor"
             android:text="@string/female" />
     </RadioGroup>
 

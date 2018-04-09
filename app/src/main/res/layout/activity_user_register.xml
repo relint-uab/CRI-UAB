@@ -3,9 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.alexa.centreforinternationalrelationsuab.user.UserRegister"
     android:padding="16dp"
-    android:background="@drawable/gradient_welcome">
+    android:background="@drawable/gradient">
 
     <!-- Sign up progress -->
     <ProgressBar
@@ -19,7 +20,7 @@
     <ScrollView
         android:id="@+id/registration_form"
         android:layout_width="match_parent"
-        android:layout_height="430dp">
+        android:layout_height="640dp">
 
         <LinearLayout
             android:id="@+id/email_registration_form"
@@ -34,8 +35,8 @@
 
                 <ImageView
                     android:id="@+id/logo"
-                    android:layout_width="75dp"
-                    android:layout_height="75dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_alignParentBottom="true"
                     android:layout_centerHorizontal="true"
                     android:src="@drawable/logo"
@@ -68,6 +69,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
                 android:textColorHint="?android:attr/textColorHint">
 
                 <EditText
@@ -89,6 +91,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                app:passwordToggleEnabled="true"
                 android:textColorHint="?android:attr/textColorHint">
 
                 <EditText
@@ -109,13 +112,22 @@
             <Button
                 android:id="@+id/email_registration_button"
                 style="?android:textAppearanceSmall"
+                android:layout_width="180dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:text="@string/action_sign_up"
+                android:textAllCaps="false"
+                android:textSize="16sp"
+                android:textColor="#01427c"
+                android:background="@drawable/ripple"
+                android:layout_marginTop="24dp" />
+            <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="@string/action_sign_up"
-                android:textStyle="bold"
-                android:textColor="#106470"
-                android:background="#e3e3e3"
-                android:layout_marginTop="20dp" />
+                android:layout_marginTop="80dp"
+                android:text="Clicking Create Account means that you are agree to the Terms &amp; Conditions and Privacy Policy."
+                android:textAlignment="center"
+                android:gravity="bottom"/>
 
         </LinearLayout>
     </ScrollView>
