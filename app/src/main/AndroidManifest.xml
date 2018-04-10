@@ -105,7 +105,7 @@
         <activity android:name=".others.secondary.OArrivingInAlbaAirCluj" />
         <activity android:name=".others.secondary.OArrivingInAlbaAirTim" />
         <activity android:name=".university.RelIntDescription" />
-        <activity android:name=".university.AcademicCalendar"></activity>
+        <activity android:name=".university.AcademicCalendar" />
     </application>
 
 </manifest>

@@ -8,18 +8,12 @@
             <item
                 android:id="@+id/nav_news"
                 android:title="@string/unews_name" />
-            <item
-                android:id="@+id/nav_course_catalog"
-                android:title="@string/ucourse_catalog_name" />
+            <item android:title="@string/ucourse_catalog_name" />
             <item
                 android:id="@+id/nav_grading_system"
                 android:title="@string/ugrading_system_name" />
-            <item
-                android:id="@+id/nav_academic_calendar"
-                android:title="@string/uacademic_calendar_name" />
-            <item
-                android:id="@+id/nav_documents"
-                android:title="@string/udocuments_name" />
+            <item android:title="@string/uacademic_calendar_name" />
+            <item android:title="@string/udocuments_name" />
             <item
                 android:id="@+id/nav_ucontact"
                 android:title="@string/ucontact_name" />
@@ -31,12 +25,8 @@
             <item
                 android:id="@+id/nav_information"
                 android:title="@string/cinformation_name" />
-            <item
-                android:id="@+id/nav_regulations"
-                android:title="@string/dregulations_name" />
-            <item
-                android:id="@+id/nav_dcontact"
-                android:title="@string/dcontact_name" />
+            <item android:title="@string/dregulations_name" />
+            <item android:title="@string/dcontact_name" />
         </menu>
     </item>
 
@@ -59,7 +49,6 @@
 
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/nav_about"
             android:icon="@drawable/ic_menu_about"
             android:title="@string/about_name" />
     </group>

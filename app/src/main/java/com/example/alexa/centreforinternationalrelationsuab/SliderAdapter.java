@@ -11,26 +11,25 @@ import android.widget.RelativeLayout;
 import android.widget.TextView;
 class SliderAdapter extends PagerAdapter {
 
-    private Context context;
-    private LayoutInflater layoutInflater;
+    private final Context context;
 
     public SliderAdapter(Context context) {
         this.context = context;
     }
 
-    private int[] slide_images = {
+    private final int[] slide_images = {
             R.drawable.university,
             R.drawable.cetate,
             R.drawable.students
     };
 
-    private String[] slide_headings = {
+    private final String[] slide_headings = {
             " ",
             " ",
             "Enjoy"
     };
 
-    private String[] slide_descriptions = {
+    private final String[] slide_descriptions = {
             "\"1 Decembrie 1918\" University of Alba Iulia is a public higher education and research institution founded in 1991 in Alba Iulia, Romania.",
             "The university now has five main faculties, each divided into several departments. They are:\nHistory and Philology\nEconomic Sciences\nExact and Engineering Sciences\nLaw and Social Sciences\nOrthodox Theology",
             "This app will help you get trough your Erasmus experience."
@@ -49,7 +48,7 @@ class SliderAdapter extends PagerAdapter {
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        LayoutInflater layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.slide_layout, container, false);
 
         ImageView slideImageView = view.findViewById(R.id.slide_image);

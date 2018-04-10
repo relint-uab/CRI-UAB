@@ -19,8 +19,6 @@ public class SliderActivity extends AppCompatActivity {
 
     private TextView[] mDots;
 
-    private SliderAdapter sliderAdapter;
-
     private Button mNextBtn;
     private Button mBackBtn;
 
@@ -37,7 +35,7 @@ public class SliderActivity extends AppCompatActivity {
         mNextBtn = findViewById(R.id.nextBtn);
         mBackBtn = findViewById(R.id.prevBtn);
 
-        sliderAdapter = new SliderAdapter(this);
+        SliderAdapter sliderAdapter = new SliderAdapter(this);
         mSlideViewPager.setAdapter(sliderAdapter);
 
 
@@ -89,7 +87,7 @@ public class SliderActivity extends AppCompatActivity {
         }
     }
 
-    private ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
+    private final ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 
