@@ -6,35 +6,20 @@
     <item android:title="@string/university_name">
         <menu>
             <item
-                android:title="@string/ucourse_catalog_name"
+                android:id="@+id/nav_centre_description"
+                android:title="@string/ucentre_description_name"
                 android:checkableBehavior="single"/>
             <item
-                android:id="@+id/nav_grading_system"
-                android:title="@string/ugrading_system_name"
-                android:checkableBehavior="single"/>
-            <item android:title="@string/uacademic_calendar_name" />
-            <item android:title="@string/udocuments_name" />
+                android:id="@+id/nav_academic_calendar"
+                android:title="@string/uacademic_calendar_name" />
+            <item
+                android:id="@+id/nav_services"
+                android:title="@string/uservices_name" />
             <item
                 android:id="@+id/nav_ucontact"
                 android:title="@string/ucontact_name" />
 
         </menu>
-
-
-    </item>
-
-    <item android:title="@string/campus_name"
-        android:checkableBehavior="single">
-        <menu>
-            <group>
-                <item
-                    android:id="@+id/nav_information"
-                    android:title="@string/cinformation_name" />
-                <item android:title="@string/dregulations_name" />
-                <item android:title="@string/dcontact_name" />
-            </group>
-        </menu>
-
 
 
     </item>
@@ -48,8 +33,8 @@
             android:id="@+id/nav_visa_requirements"
             android:title="@string/ovisa_requirements" />
         <item
-            android:id="@+id/nav_health_care_insurance"
-            android:title="@string/ohealth_and_insurance_name" />
+            android:id="@+id/nav_useful_information"
+            android:title="@string/ouseful_information_name" />
         <item
             android:id="@+id/nav_traveling"
             android:title="@string/otraveling_name" />

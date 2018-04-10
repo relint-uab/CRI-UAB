@@ -83,10 +83,8 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
-            android:name=".campus.CInformation"
-            android:label="@string/cinformation_name"
-            android:screenOrientation="portrait" />
-        <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
+            android:name=".others.secondary.OArrivingInAlbaTrains"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".others.main.OArrivingInAlba" />
         <activity android:name=".university.GradingSystem" />
         <activity
@@ -95,17 +93,43 @@
         <activity android:name=".university.Contact" />
         <activity android:name=".others.main.OVisaReq" />
         <activity android:name=".others.main.OUsefulInfo" />
-        <activity android:name=".others.secondary.OUsefulInfoPosta" />
-        <activity android:name=".others.secondary.OUsefulInfoTelekom" />
-        <activity android:name=".others.secondary.OUsefulInfoOrange" />
-        <activity android:name=".others.secondary.OUsefulInfoVodafone" />
-        <activity android:name=".others.secondary.OArrivingInAlbaAutogari" />
-        <activity android:name=".others.secondary.OArrivingInAlbaAirBuc" />
-        <activity android:name=".others.secondary.OArrivingInAlbaAirSibiu" />
-        <activity android:name=".others.secondary.OArrivingInAlbaAirCluj" />
-        <activity android:name=".others.secondary.OArrivingInAlbaAirTim" />
+        <activity
+            android:name=".others.secondary.OUsefulInfoPosta"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OUsefulInfoTelekom"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OUsefulInfoOrange"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OUsefulInfoVodafone"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OArrivingInAlbaAutogari"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OArrivingInAlbaAirBuc"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OArrivingInAlbaAirSibiu"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OArrivingInAlbaAirCluj"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".others.secondary.OArrivingInAlbaAirTim"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".university.RelIntDescription" />
         <activity android:name=".university.AcademicCalendar" />
+        <activity android:name=".faculties.HistoryAndPhilology" />
+        <activity android:name=".faculties.Economics" />
+        <activity android:name=".faculties.ExactSciencesEngineering" />
+        <activity android:name=".faculties.LawSocialScience" />
+        <activity android:name=".faculties.OrthodoxTheology" />
+        <activity android:name=".university.CourseCatalog" />
+        <activity android:name=".university.Services" />
+        <activity android:name=".About"></activity>
     </application>
 
 </manifest>
