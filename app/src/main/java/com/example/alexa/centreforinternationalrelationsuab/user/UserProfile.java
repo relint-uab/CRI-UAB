@@ -68,7 +68,7 @@ public class UserProfile extends AppCompatActivity {
 
     private DatePickerDialog.OnDateSetListener mDateOfBirthSetListner;
 
-    final Context c = this;
+    private final Context c = this;
     private static final int GALLERY_PICK = 1;
 
     @Override
@@ -190,7 +190,7 @@ public class UserProfile extends AppCompatActivity {
                 String current_uid = mCurrentUser.getUid();
                 mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users").child(current_uid);
 
-                final EditText userInputDialogEditFirstname = (EditText) ViewFirstname.findViewById(R.id.firstnameInputDialog);
+                final EditText userInputDialogEditFirstname = ViewFirstname.findViewById(R.id.firstnameInputDialog);
                 alertDialogEditFirstname
                         .setCancelable(false)
                         .setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -232,7 +232,7 @@ public class UserProfile extends AppCompatActivity {
                 AlertDialog.Builder alertDialogEditLastname = new AlertDialog.Builder(c);
                 alertDialogEditLastname.setView(ViewLastname);
 
-                final EditText userInputDialogEditLastname = (EditText) ViewLastname.findViewById(R.id.lastnameInputDialog);
+                final EditText userInputDialogEditLastname = ViewLastname.findViewById(R.id.lastnameInputDialog);
                 alertDialogEditLastname
                         .setCancelable(false)
                         .setPositiveButton("Send", new DialogInterface.OnClickListener() {
@@ -270,7 +270,7 @@ public class UserProfile extends AppCompatActivity {
                 AlertDialog.Builder alertDialogEditGender = new AlertDialog.Builder(c);
                 alertDialogEditGender.setView(ViewGender);
 
-                final RadioGroup RadioGroupGender = (RadioGroup) ViewGender.findViewById(R.id.radio_group_gender);
+                final RadioGroup RadioGroupGender = ViewGender.findViewById(R.id.radio_group_gender);
 
                 alertDialogEditGender
                         .setCancelable(false)
@@ -278,7 +278,7 @@ public class UserProfile extends AppCompatActivity {
 
                             public void onClick(DialogInterface dialogBox, int id) {
                                 int selectedId = RadioGroupGender.getCheckedRadioButtonId();
-                                RadioButton RadioButtonGender=(RadioButton)ViewGender.findViewById(selectedId);
+                                RadioButton RadioButtonGender= ViewGender.findViewById(selectedId);
                                 Toast.makeText(UserProfile.this,RadioButtonGender.getText(),Toast.LENGTH_SHORT).show();
                                 mUserDatabase.child("Gender").setValue(RadioButtonGender.getText());
                             }
@@ -382,7 +382,7 @@ public class UserProfile extends AppCompatActivity {
                 AlertDialog.Builder alertDialogEditCountry = new AlertDialog.Builder(c);
                 alertDialogEditCountry.setView(ViewCountry);
 
-                final RadioGroup RadioGroupCountry = (RadioGroup) ViewCountry.findViewById(R.id.radio_group_country);
+                final RadioGroup RadioGroupCountry = ViewCountry.findViewById(R.id.radio_group_country);
 
                 alertDialogEditCountry
                         .setCancelable(false)

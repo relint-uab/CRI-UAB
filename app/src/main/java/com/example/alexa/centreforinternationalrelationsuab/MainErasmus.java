@@ -80,16 +80,16 @@ public class MainErasmus extends AppCompatActivity
         Handler pdCanceller = new Handler();
         pdCanceller.postDelayed(progressRunnable, 3000);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_erasmus);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout_erasmus);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view_erasmus);
+        NavigationView navigationView = findViewById(R.id.nav_view_erasmus);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -192,12 +192,12 @@ public class MainErasmus extends AppCompatActivity
     }
 
     //View Holder For Recycler View
-    public static class ShowDataViewHolder extends RecyclerView.ViewHolder {
+    static class ShowDataViewHolder extends RecyclerView.ViewHolder {
         private final TextView post_title;
         private final ImageView image_url;
         private final TextView post_content;
 
-        public ShowDataViewHolder(final View itemView) {
+        ShowDataViewHolder(final View itemView) {
             super(itemView);
             image_url = itemView.findViewById(R.id.fetch_image);
             post_title = itemView.findViewById(R.id.fetch_post_title);

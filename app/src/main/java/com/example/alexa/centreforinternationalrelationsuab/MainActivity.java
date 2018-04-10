@@ -1,6 +1,5 @@
 package com.example.alexa.centreforinternationalrelationsuab;
 
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -21,7 +20,6 @@ import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
@@ -68,7 +66,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         // Progress dialog Loading page
         mProgress = new SpotsDialog(this, R.style.Loading);
-        mProgress.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(mProgress.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mProgress.show();
         Runnable progressRunnable = new Runnable() {
 
@@ -81,16 +79,16 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Handler pdCanceller = new Handler();
         pdCanceller.postDelayed(progressRunnable, 3000);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
+        NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -197,12 +195,12 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     //View Holder For Recycler View
-    public static class ShowDataViewHolder extends RecyclerView.ViewHolder {
+    static class ShowDataViewHolder extends RecyclerView.ViewHolder {
         private final TextView post_title;
         private final ImageView image_url;
         private final TextView post_content;
 
-        public ShowDataViewHolder(final View itemView) {
+        ShowDataViewHolder(final View itemView) {
             super(itemView);
             image_url = itemView.findViewById(R.id.fetch_image);
             post_title = itemView.findViewById(R.id.fetch_post_title);
@@ -267,11 +265,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             return true;
         }else if (id == R.id.nav_visa_requirements){
             Intent i = new Intent(getApplicationContext(), OVisaReq.class);
-            startActivity(i);
-
-            return true;
-        } else if (id == R.id.nav_ucontact){
-            Intent i = new Intent(getApplicationContext(), Contact.class);
             startActivity(i);
 
             return true;

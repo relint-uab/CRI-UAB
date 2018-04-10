@@ -12,6 +12,8 @@ import android.webkit.WebViewClient;
 
 import com.example.alexa.centreforinternationalrelationsuab.R;
 
+import java.util.Objects;
+
 import dmax.dialog.SpotsDialog;
 
 public class Travel extends AppCompatActivity {
@@ -26,7 +28,7 @@ public class Travel extends AppCompatActivity {
 
         // Progress dialog Loading page
         mProgress = new SpotsDialog(this, R.style.Loading);
-        mProgress.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(mProgress.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mProgress.show();
         Runnable progressRunnable = new Runnable() {
 
@@ -43,7 +45,7 @@ public class Travel extends AppCompatActivity {
 
 
         //Get a reference to your WebView//
-        WebView webView = (WebView) findViewById(R.id.webview);
+        WebView webView = findViewById(R.id.webview);
 
         //Specify the URL you want to display//
         webView.loadUrl("http://www.romania.travel/en/");

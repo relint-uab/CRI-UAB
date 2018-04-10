@@ -3,7 +3,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context="com.example.alexa.centreforinternationalrelationsuab.campus.CInformation"
     android:orientation="vertical"
     android:background="@drawable/animated_gradient"
@@ -20,7 +19,7 @@
             android:orientation="vertical"
             android:padding="10dp">
 
-            <!-- INFORMATIONS -->
+            <!-- INFORMATION -->
             <TextView
                 android:id="@+id/information_p_0"
                 android:layout_width="match_parent"

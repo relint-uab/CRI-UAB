@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -80,7 +79,7 @@
         android:id="@+id/textView8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="\u0009 \u0009 \u0009 III. proof of the financial means in amount of at least the country minimul net wage/month, for the entire period specified in the visa;"
+        android:text="\u0009 \u0009 \u0009 III. proof of the financial means in amount of at least the country minimum net wage/month, for the entire period specified in the visa;"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="16dp"
         android:textColor="#fff"/>

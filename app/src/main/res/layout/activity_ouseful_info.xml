@@ -15,7 +15,7 @@
             android:id="@+id/textView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\u0009 Healthcare \n"
+            android:text="\u0009 Health care \n"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
             android:textStyle="bold"
@@ -73,7 +73,7 @@
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\u0009 Romania's official currency is LEU (RON): 1 LEU is 100 BANI. \n\u0009 You can use your foreign debit card at any ATM and you will be issued the equivalent in Lei of the amount you wish to withdraw in US dollars or Euro. Romanian ATMs only accept Visa, MasterCard and Maestro. \n\u0009 Credit cards are widely accepted but you should also have cash available when you go shopping (especially at the food stores and open markets). \n\u0009 Deoending on your needs, there are several possibilities for money transfer: postal money order (&quot;mandat postal&quot;), bank transfer or special transfer (such as Western Union and Money Gram).\n"
+            android:text="\u0009 Romania's official currency is LEU (RON): 1 LEU is 100 BANI. \n\u0009 You can use your foreign debit card at any ATM and you will be issued the equivalent in Lei of the amount you wish to withdraw in US dollars or Euro. Romanian ATMs only accept Visa, MasterCard and Maestro. \n\u0009 Credit cards are widely accepted but you should also have cash available when you go shopping (especially at the food stores and open markets). \n\u0009 Depending on your needs, there are several possibilities for money transfer: postal money order (&quot;mandat postal&quot;), bank transfer or special transfer (such as Western Union and Money Gram).\n"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
             android:textColor="#fff"/>
@@ -92,7 +92,7 @@
             android:id="@+id/textView9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="\u0009 Non-residents have the right to acquire, hold and use financial assets denominated in foreign currency or in the national currency of Romania - Lei. \n\u0009 To open a bank account you usually need a passport or an identity card, and if available, a temporary resident permit. \n\u0009 Some of the commercial banks present in Alba Iulia are: BRD Groupe Societe Generale, Raiffeisen Bank, BCR, OTP Bank, City Bank, Banca Transilvania, CEC, Piraeus Bank, etc.\n"
+            android:text="\u0009 Non-residents have the right to acquire, hold and use financial assets denominated in foreign currency or in the national currency of Romania - Lei. \n\u0009 To open a bank account you usually need a passport or an identity card, and if available, a temporary resident permit. \n\u0009 Some of the commercial banks present in Alba Iulia are: BRD Groupe Société Générale, Raiffeisen Bank, BCR, OTP Bank, City Bank, Banca Transilvania, CEC, Piraeus Bank, etc.\n"
             tools:layout_editor_absoluteX="16dp"
             tools:layout_editor_absoluteY="16dp"
             android:textColor="#fff"/>

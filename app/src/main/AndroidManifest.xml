@@ -92,7 +92,7 @@
         <activity
             android:name=".others.main.Travel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".university.Contact"></activity>
+        <activity android:name=".university.Contact" />
         <activity android:name=".others.main.OVisaReq" />
         <activity android:name=".others.main.OUsefulInfo" />
         <activity android:name=".others.secondary.OUsefulInfoPosta" />

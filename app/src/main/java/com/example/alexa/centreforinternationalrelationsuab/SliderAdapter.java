@@ -9,36 +9,31 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+class SliderAdapter extends PagerAdapter {
 
-/**
- * Created by Dragos on 13.03.2018.
- */
-
-public class SliderAdapter extends PagerAdapter {
-
-    Context context;
-    LayoutInflater layoutInflater;
+    private Context context;
+    private LayoutInflater layoutInflater;
 
     public SliderAdapter(Context context) {
         this.context = context;
     }
 
-    public int[] slide_images = {
+    private int[] slide_images = {
             R.drawable.university,
             R.drawable.cetate,
             R.drawable.students
     };
 
-    public String[] slide_headings = {
+    private String[] slide_headings = {
             "waiting for you...",
             "adventure",
             "Learn"
     };
 
-    public String[] slide_descriptions = {
-            "In this tutorial I will be showing you how to create Onboarding screen in Android Studio from scratch without using any library.",
-            "In this tutorial I will be showing you how to create Onboarding screen in Android Studio from scratch without using any library.",
-            "In this tutorial I will be showing you how to create Onboarding screen in Android Studio from scratch without using any library."
+    private String[] slide_descriptions = {
+            "&quot;1 Decembrie 1918 &quot; University of Alba Iulia is a public higher education and research institution founded in 1991 in Alba Iulia , Romania.",
+            "The university now has five main faculties, each divided into several departments. They are:\nHistory and Philology\nEconomic Sciences\nExact and Engineering Sciences\nLaw and Social Sciences\nOrthodox Theology",
+            "This app will help you get trough your Erasmus experience."
     };
 
     @Override
@@ -48,18 +43,18 @@ public class SliderAdapter extends PagerAdapter {
 
     @Override
     public boolean isViewFromObject(@NonNull View view, @NonNull Object object) {
-        return view == (RelativeLayout) object;
+        return view == object;
     }
 
     @NonNull
     @Override
     public Object instantiateItem(@NonNull ViewGroup container, int position) {
-        layoutInflater = (LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
+        layoutInflater = (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         View view = layoutInflater.inflate(R.layout.slide_layout, container, false);
 
-        ImageView slideImageView = (ImageView) view.findViewById(R.id.slide_image);
-        TextView slideHeading = (TextView) view.findViewById(R.id.slide_heading);
-        TextView slideDescription = (TextView) view.findViewById(R.id.slide_description);
+        ImageView slideImageView = view.findViewById(R.id.slide_image);
+        TextView slideHeading = view.findViewById(R.id.slide_heading);
+        TextView slideDescription = view.findViewById(R.id.slide_description);
 
         slideImageView.setImageResource(slide_images[position]);
         slideHeading.setText(slide_headings[position]);

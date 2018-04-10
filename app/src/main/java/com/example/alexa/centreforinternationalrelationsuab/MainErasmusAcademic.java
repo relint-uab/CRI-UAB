@@ -6,8 +6,6 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.NonNull;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -17,7 +15,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -68,7 +65,7 @@ public class MainErasmusAcademic extends AppCompatActivity
 
         // Progress dialog Loading page
         mProgress = new SpotsDialog(this, R.style.Loading);
-        mProgress.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        Objects.requireNonNull(mProgress.getWindow()).setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
         mProgress.show();
         Runnable progressRunnable = new Runnable() {
 
@@ -81,16 +78,16 @@ public class MainErasmusAcademic extends AppCompatActivity
         Handler pdCanceller = new Handler();
         pdCanceller.postDelayed(progressRunnable, 3000);
 
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout_erasmus_academic);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout_erasmus_academic);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view_erasmus_academic);
+        NavigationView navigationView = findViewById(R.id.nav_view_erasmus_academic);
         navigationView.setNavigationItemSelectedListener(this);
 
 
@@ -194,12 +191,12 @@ public class MainErasmusAcademic extends AppCompatActivity
     }
 
     //View Holder For Recycler View
-    public static class ShowDataViewHolder extends RecyclerView.ViewHolder {
+    static class ShowDataViewHolder extends RecyclerView.ViewHolder {
         private final TextView post_title;
         private final ImageView image_url;
         private final TextView post_content;
 
-        public ShowDataViewHolder(final View itemView) {
+        ShowDataViewHolder(final View itemView) {
             super(itemView);
             image_url = itemView.findViewById(R.id.fetch_image);
             post_title = itemView.findViewById(R.id.fetch_post_title);

@@ -7,14 +7,12 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.example.alexa.centreforinternationalrelationsuab.R;
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -99,7 +97,7 @@ public class UserRegister extends AppCompatActivity {
         inputManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), InputMethodManager.HIDE_NOT_ALWAYS);
     }
 
-    public void sendRequest(final String mail, final String password) {
+    private void sendRequest(final String mail, final String password) {
         final ProgressDialog progressDialog = ProgressDialog.show(UserRegister.this, "Please wait...", "Processing...", true);
         (firebaseAuth.createUserWithEmailAndPassword(mail, password))
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
@@ -122,7 +120,7 @@ public class UserRegister extends AppCompatActivity {
                             String mCurrentUserUid = mCurrentUser.getUid();
                             mUserDatabase = FirebaseDatabase.getInstance().getReference().child("Users");
 
-                            Map<String, String> userData = new HashMap<String, String>();
+                            Map<String, String> userData = new HashMap<>();
 
                             userData.put("Account_type", "Undefined");
                             userData.put("Firstname", "User");

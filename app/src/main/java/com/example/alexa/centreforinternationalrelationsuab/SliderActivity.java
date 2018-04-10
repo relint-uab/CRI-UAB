@@ -70,7 +70,7 @@ public class SliderActivity extends AppCompatActivity {
         });
     }
 
-    public void addDotsIndicator(int position){
+    private void addDotsIndicator(int position){
         mDots = new TextView[3];
         mDotsLayout.removeAllViews();
 
@@ -89,7 +89,7 @@ public class SliderActivity extends AppCompatActivity {
         }
     }
 
-    ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
+    private ViewPager.OnPageChangeListener viewListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
 

@@ -11,7 +11,6 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
-import android.widget.Toast;
 
 import com.example.alexa.centreforinternationalrelationsuab.MainActivity;
 import com.example.alexa.centreforinternationalrelationsuab.MainErasmus;
@@ -92,7 +91,7 @@ public class SelectAccountType extends AppCompatActivity {
     }
 
 
-    public void selectAccountType(){
+    private void selectAccountType(){
 
         assert mCurrentUser != null;
         String current_uid = mCurrentUser.getUid();
