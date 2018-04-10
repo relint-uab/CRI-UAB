@@ -25,13 +25,13 @@ class SliderAdapter extends PagerAdapter {
     };
 
     private String[] slide_headings = {
-            "waiting for you...",
-            "adventure",
-            "Learn"
+            " ",
+            " ",
+            "Enjoy"
     };
 
     private String[] slide_descriptions = {
-            "&quot;1 Decembrie 1918 &quot; University of Alba Iulia is a public higher education and research institution founded in 1991 in Alba Iulia , Romania.",
+            "\"1 Decembrie 1918\" University of Alba Iulia is a public higher education and research institution founded in 1991 in Alba Iulia, Romania.",
             "The university now has five main faculties, each divided into several departments. They are:\nHistory and Philology\nEconomic Sciences\nExact and Engineering Sciences\nLaw and Social Sciences\nOrthodox Theology",
             "This app will help you get trough your Erasmus experience."
     };
