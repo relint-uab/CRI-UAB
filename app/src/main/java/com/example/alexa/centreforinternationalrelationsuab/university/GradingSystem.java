@@ -1,7 +1,9 @@
-package com.example.alexa.centreforinternationalrelationsuab;
+package com.example.alexa.centreforinternationalrelationsuab.university;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+
+import com.example.alexa.centreforinternationalrelationsuab.R;
 
 public class GradingSystem extends AppCompatActivity {
 

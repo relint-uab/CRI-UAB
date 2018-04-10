@@ -7,7 +7,7 @@
     tools:context="com.example.alexa.centreforinternationalrelationsuab.others.main.OArrivingInAlba">
 
     <ImageButton
-        android:id="@+id/imageButton"
+        android:id="@+id/web_autogari"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/logo_autogari" />
 
     <ImageButton
-        android:id="@+id/imageButton2"
+        android:id="@+id/web_airport_cluj"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -31,11 +31,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton"
+        app:layout_constraintTop_toBottomOf="@+id/web_autogari"
         app:srcCompat="@drawable/logo_airport_cluj" />
 
     <ImageButton
-        android:id="@+id/imageButton3"
+        android:id="@+id/web_airport_tim"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -46,11 +46,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@+id/web_airport_cluj"
         app:srcCompat="@drawable/logo_aerotim" />
 
     <ImageButton
-        android:id="@+id/imageButton4"
+        android:id="@+id/web_airport_sibiu"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -61,11 +61,11 @@
         android:paddingVertical="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton3"
+        app:layout_constraintTop_toBottomOf="@+id/web_airport_tim"
         app:srcCompat="@drawable/logo_airport_sibiu" />
 
     <ImageButton
-        android:id="@+id/imageButton5"
+        android:id="@+id/web_airport_buc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -73,6 +73,6 @@
         android:layout_marginTop="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageButton4"
+        app:layout_constraintTop_toBottomOf="@+id/web_airport_sibiu"
         app:srcCompat="@drawable/logo_airport_bucharest" />
 </android.support.constraint.ConstraintLayout>

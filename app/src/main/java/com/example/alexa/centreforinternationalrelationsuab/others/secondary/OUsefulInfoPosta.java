@@ -8,15 +8,14 @@ import android.webkit.WebViewClient;
 
 import com.example.alexa.centreforinternationalrelationsuab.R;
 
-public class OArrivingInAlbaTrains extends AppCompatActivity {
+public class OUsefulInfoPosta extends AppCompatActivity {
 
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oarriving_in_alba_trains);
-
+        setContentView(R.layout.activity_ouseful_info_posta);
         //Back button
         if(getSupportActionBar()!=null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -24,10 +23,10 @@ public class OArrivingInAlbaTrains extends AppCompatActivity {
         }
 
         //Get a reference to your WebView//
-        WebView webView = findViewById(R.id.webview_trains);
+        WebView webView = findViewById(R.id.webview_posta);
 
-//Specify the URL you want to display//
-        webView.loadUrl("https://www.cfrcalatori.ro/en/releases/110-archive-press/770-mersul-trenurilor-2016-2017");
+        //Specify the URL you want to display//
+        webView.loadUrl("https://www.posta-romana.ro/");
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());

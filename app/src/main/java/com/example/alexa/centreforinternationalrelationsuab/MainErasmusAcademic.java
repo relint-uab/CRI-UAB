@@ -27,6 +27,10 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.example.alexa.centreforinternationalrelationsuab.campus.CInformation;
+import com.example.alexa.centreforinternationalrelationsuab.others.main.OArrivingInAlba;
+import com.example.alexa.centreforinternationalrelationsuab.others.main.OUsefulInfo;
+import com.example.alexa.centreforinternationalrelationsuab.others.main.OVisaReq;
+import com.example.alexa.centreforinternationalrelationsuab.university.Contact;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserProfile;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserWelcome;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -250,6 +254,26 @@ public class MainErasmusAcademic extends AppCompatActivity
             return true;
         }else if (id == R.id.nav_information) {
             Intent i = new Intent(getApplicationContext(), CInformation.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_visa_requirements){
+            Intent i = new Intent(getApplicationContext(), OVisaReq.class);
+            startActivity(i);
+
+            return true;
+        } else if (id == R.id.nav_ucontact){
+            Intent i = new Intent(getApplicationContext(), Contact.class);
+            startActivity(i);
+
+            return true;
+        } else if (id == R.id.nav_arriving_in_alba){
+            Intent i = new Intent(getApplicationContext(), OArrivingInAlba.class);
+            startActivity(i);
+
+            return true;
+        } else if (id == R.id.nav_health_care_insurance){
+            Intent i = new Intent(getApplicationContext(), OUsefulInfo.class);
             startActivity(i);
 
             return true;

@@ -86,11 +86,22 @@
             android:screenOrientation="portrait" />
         <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
         <activity android:name=".others.main.OArrivingInAlba" />
-        <activity android:name=".GradingSystem" />
+        <activity android:name=".university.GradingSystem" />
         <activity
             android:name=".others.main.Travel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity android:name=".university.Contact"></activity>
+        <activity android:name=".others.main.OVisaReq" />
+        <activity android:name=".others.main.OUsefulInfo" />
+        <activity android:name=".others.secondary.OUsefulInfoPosta" />
+        <activity android:name=".others.secondary.OUsefulInfoTelekom" />
+        <activity android:name=".others.secondary.OUsefulInfoOrange" />
+        <activity android:name=".others.secondary.OUsefulInfoVodafone" />
+        <activity android:name=".others.secondary.OArrivingInAlbaAutogari" />
+        <activity android:name=".others.secondary.OArrivingInAlbaAirBuc" />
+        <activity android:name=".others.secondary.OArrivingInAlbaAirSibiu" />
+        <activity android:name=".others.secondary.OArrivingInAlbaAirCluj" />
+        <activity android:name=".others.secondary.OArrivingInAlbaAirTim" />
     </application>
 
 </manifest>

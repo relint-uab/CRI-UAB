@@ -8,26 +8,26 @@ import android.webkit.WebViewClient;
 
 import com.example.alexa.centreforinternationalrelationsuab.R;
 
-public class OArrivingInAlbaTrains extends AppCompatActivity {
+public class OArrivingInAlbaAirCluj extends AppCompatActivity {
 
     private WebView webView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_oarriving_in_alba_trains);
+        setContentView(R.layout.activity_oarriving_in_alba_air_cluj);
 
         //Back button
-        if(getSupportActionBar()!=null){
+        if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
 
         //Get a reference to your WebView//
-        WebView webView = findViewById(R.id.webview_trains);
+        WebView webView = findViewById(R.id.webview_airport_cluj);
 
-//Specify the URL you want to display//
-        webView.loadUrl("https://www.cfrcalatori.ro/en/releases/110-archive-press/770-mersul-trenurilor-2016-2017");
+        //Specify the URL you want to display//
+        webView.loadUrl("http://airportcluj.ro/");
 
         webView.getSettings().setJavaScriptEnabled(true);
         webView.setWebViewClient(new WebViewClient());
@@ -38,7 +38,7 @@ public class OArrivingInAlbaTrains extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        if (item.getItemId()==android.R.id.home)
+        if (item.getItemId() == android.R.id.home)
             finish();
         return super.onOptionsItemSelected(item);
     }
@@ -51,5 +51,5 @@ public class OArrivingInAlbaTrains extends AppCompatActivity {
             super.onBackPressed();
         }
     }
-
 }
+

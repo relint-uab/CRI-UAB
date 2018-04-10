@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".others.main.OUsefulInfo">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Healthcare \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Health Services and Medical Insurance:"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 All University students are required to have health insurance for the entire period of their stay in Romania. Due to the fact that international health insurance is not always recognized in Romania, we advise you to get only travel insurance from your country of origin, and once you arrive in Romania, to apply for a Romanian health insurance policy (either public or private), according to the Romanian law. \nThe cost of a minimum health care package is approx. 20 Euros/month. \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Students aged below 26 are exempt from paying for health care services provided by the Romanian public health care system (students' practice, public hospitals or clinics). Please note that all dental care services are paid in Romania (except for emergency dental care in hospitals). \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 EMERGENCY NUMBER: 112 (Police, Fire-fighters, Ambulance) \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Currency"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Romania's official currency is LEU (RON): 1 LEU is 100 BANI. \n\u0009 You can use your foreign debit card at any ATM and you will be issued the equivalent in Lei of the amount you wish to withdraw in US dollars or Euro. Romanian ATMs only accept Visa, MasterCard and Maestro. \n\u0009 Credit cards are widely accepted but you should also have cash available when you go shopping (especially at the food stores and open markets). \n\u0009 Deoending on your needs, there are several possibilities for money transfer: postal money order (&quot;mandat postal&quot;), bank transfer or special transfer (such as Western Union and Money Gram).\n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Banks"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Non-residents have the right to acquire, hold and use financial assets denominated in foreign currency or in the national currency of Romania - Lei. \n\u0009 To open a bank account you usually need a passport or an identity card, and if available, a temporary resident permit. \n\u0009 Some of the commercial banks present in Alba Iulia are: BRD Groupe Societe Generale, Raiffeisen Bank, BCR, OTP Bank, City Bank, Banca Transilvania, CEC, Piraeus Bank, etc.\n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Cost of Living"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Minimum 120 Euros/month:\n\u0009 120 Euro x 12 months = 1,440 Euros/year \n\u0009 1 Euro = 4,65 RON \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Post office"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 The Romanian Post, is the national operator in mailing services. It also provides currency exchange, consultancy and transportation services, national and international payments. \n\u0009 For further information you can access the website: \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/web_posta"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_posta" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Cable TV and Internet"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 If you live in your own flat, you may have to subscribe to cable and Internet providers. The main companies are UPC, RDS, NextGen, Telekom, etc. \n\n\u0009 The Romanian television offers a wide choice of channels and programmes in English, German, Hungarian, Spanish, French, Turkish, etc. Films are usually subtitled in Romanian, and rarely dubbed.\n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Electricity"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 The electricity is 220V / 50Hz\n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Shopping in Romania"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 There is a wide variety of shopping centres, where you can find everything you need for your stay in Romania. Discount periods are mainly in January-February, July and the end of October. For clothing, there are numerous outlet shops, where you can find good quality clothes at reasonable prices. For electronics, you can find shops with a large variety of products (Flanco, Altex). For furniture and decorations, the most popular stores are Ikea and Bricostore (only in larger cities). The most important hardware stores in Alba Iulia are Dedeman and Ambient. Some of the supermarkets where you can do your daily shopping are Kaufland, Lidl, Dacia, Penny, etc. In big cities and in shopping malls, stores are generally open rom 9.am to 22.pm from Monday to Saturday. They are also open on Sundays but close earlier. In smaller towns, many grocery stores are open 24/7 \n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Phones"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textStyle="bold"
+            android:textColor="#fff"/>
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\u0009 Cell phones are widely spread in Romania. Almost whole country is covered by telephone networks. You can use your home SIM card but be aware of roaming fees when you make a phone call to your home country. \n\u0009 You should unlock your mobile phone before leaving your home country, so that you can use a Romanian SIM card. Telekom, Orange and Vodafone are three major mobile companies among others. You can consult their websites or pay a visit to their store to get information about subscriptions, especially if you stay for several months! \n\u0009 To call a Romanian number from a foreign one, you have to add +40. For example, if you want to call 0721 34 56 78 you have to dial 00 40 721 34 56 78.\n"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/web_telekom"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_telekom" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
+
+        <ImageView
+            android:id="@+id/web_orange"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_orange" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
+
+        <ImageView
+            android:id="@+id/web_vodafone"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:layout_gravity="center"
+            app:srcCompat="@drawable/logo_vodafone" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="\n"/>
+
+    </LinearLayout>
+
+</ScrollView>
