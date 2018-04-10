@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".university.AcademicCalendar">
+
+    <ScrollView
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shrinkColumns="2"
+            android:stretchColumns="2"
+            android:background="@color/colorPrimary">
+
+            <TableRow
+                android:id="@+id/table_header_winter_semester"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/winter_semester"
+                    android:text="Autumn semester"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="12dip"
+                    android:gravity="start"
+                    android:layout_marginTop="1dp" />
+
+                <TextView
+                    android:id="@+id/winter_semester2"
+                    android:text="October 1 - end of January"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="12dip"
+                    android:gravity="start"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_winter_row1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/winter_description_row1"
+                    android:text="Winter holiday"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:id="@+id/winter_semester_date_row1"
+                    android:text="mid December - beginning of January"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_winter_row2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+
+                <TextView
+                    android:id="@+id/winter_description_row2"
+                    android:text="First examination session"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:id="@+id/winter_semester_date_row2"
+                    android:text="end of January - end of February"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/table_winter_row3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/winter_description_row3"
+                    android:text="Intersemestrial holiday"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:id="@+id/winter_semester_date_row3"
+                    android:text="mid February - end of February"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/table_header_summer_semester"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/summer_semester"
+                    android:text="Summer Semester"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="12dip"
+                    android:gravity="start"
+                    android:layout_marginTop="1dp"/>
+
+                <TextView
+                    android:id="@+id/summer_semester2"
+                    android:text="end of February - end of May"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:textStyle="bold"
+                    android:padding="12dip"
+                    android:gravity="start"
+                    android:layout_marginTop="1dp"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/table_summer_row1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/summer_description_row1"
+                    android:text="Second examination session"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp" />
+                <TextView
+                    android:id="@+id/summer_semester_date_row1"
+                    android:text="end of May - end of June - beginning of July"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+            <TableRow
+                android:id="@+id/table_summer_row2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent">
+                <TextView
+                    android:id="@+id/summer_description_row2"
+                    android:text="Summer holiday"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginEnd="1dp" />
+
+                <TextView
+                    android:id="@+id/summer_semester_date_row2"
+                    android:text="beginning of July - end of September"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.9"
+                    android:textColor="#fff"
+                    android:padding="20dip"
+                    android:gravity="center"
+                    android:layout_marginTop="1dp" />
+            </TableRow>
+
+        </TableLayout>
+    </ScrollView>
+
+</android.support.constraint.ConstraintLayout>
