@@ -3,7 +3,6 @@
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
-    <string name="welcome">Welcome,</string>
 
     <!--MAIN PAGES - ACCOUNT TYPE-->
 
@@ -13,27 +12,30 @@
 
     <!-- ******** PAGE NAMES ******** -->
 
-    <string name="settings_name">Settings</string>
     <string name="about_name">About</string>
 
     <string name="university_name">University</string>
     <string name="unews_name">News</string>
+    <string name="ucentre_description_name">Centre for International Relations</string>
     <string name="ucourse_catalog_name">Course Catalog</string>
     <string name="ugrading_system_name">Grading System</string>
     <string name="uacademic_calendar_name">Academic Calendar</string>
     <string name="uservices_name">Services</string>
     <string name="udocuments_name">Documents</string>
+    <string name="uservices_name">Services</string>
     <string name="ucontact_name">Contact University</string>
 
-    <string name="campus_name">Campus</string>
-    <string name="cinformation_name">Campus Information</string>
-    <string name="dregulations_name">Dormitory Regulations</string>
-    <string name="dcontact_name">Contact Dormitory</string>
+    <string name="faculies_name">Faculties</string>
+    <string name="fhistory_and_philology_name">History and Philology</string>
+    <string name="feconomics_name">Economics</string>
+    <string name="fexact_sciences_engineering_name">Exact Sciences and Engineering</string>
+    <string name="flaw_social_science_name">Law and Social Sciences</string>
+    <string name="forthodox_theology_name">Orthodox Theology</string>
 
     <string name="others_name">Others</string>
     <string name="oarriving_in_alba_name">Arriving in Alba Iulia</string>
     <string name="ovisa_requirements">Visa Requirements</string>
-    <string name="ohealth_and_insurance_name">Health Care and Insurance</string>
+    <string name="ouseful_information_name">Useful Information</string>
     <string name="otraveling_name">Travelling</string>
 
     <string name="terms_of_use">Terms of Use</string>
@@ -107,7 +109,6 @@
 
     <string name="university_row">University:</string>
 
-    <string name="country">Country</string>
     <string name="country_row">Country:</string>
 
     <string name="display_email">user@email.com</string>
@@ -188,7 +189,6 @@
     <!-- ******** USED MORE THEN ONCE ******** -->
     <string name="logo_text">CIR UAB logo</string>
     <string name="empty">Empty</string>
-    <string name="date">date format 31.01.2017</string>
     <string name="fetch_text">Fetch image</string>
 
     <string name="terms_of_use_content">Terms of Service ("Terms")
@@ -246,7 +246,6 @@
         If you have any questions about these Terms, please contact us.</string>
 
 
-    <string name="action_settings">Settings</string>
     <string name="back">Back</string>
 
 

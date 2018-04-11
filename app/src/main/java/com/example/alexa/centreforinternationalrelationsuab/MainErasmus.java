@@ -23,13 +23,15 @@ import android.widget.TextView;
 
 import com.bumptech.glide.Glide;
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
-import com.example.alexa.centreforinternationalrelationsuab.campus.CInformation;
 import com.example.alexa.centreforinternationalrelationsuab.others.main.OArrivingInAlba;
 import com.example.alexa.centreforinternationalrelationsuab.others.main.OUsefulInfo;
 import com.example.alexa.centreforinternationalrelationsuab.others.main.OVisaReq;
 import com.example.alexa.centreforinternationalrelationsuab.others.main.Travel;
+import com.example.alexa.centreforinternationalrelationsuab.university.AcademicCalendar;
 import com.example.alexa.centreforinternationalrelationsuab.university.Contact;
+import com.example.alexa.centreforinternationalrelationsuab.university.CourseCatalog;
 import com.example.alexa.centreforinternationalrelationsuab.university.GradingSystem;
+import com.example.alexa.centreforinternationalrelationsuab.university.RelIntDescription;
 import com.example.alexa.centreforinternationalrelationsuab.university.Services;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserProfile;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserWelcome;
@@ -246,43 +248,58 @@ public class MainErasmus extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_grading_system) {
-            Intent i = new Intent(this, GradingSystem.class);
+        if (id == R.id.nav_centre_description) {
+            Intent i = new Intent(this, RelIntDescription.class);
             startActivity(i);
 
             return true;
-        }else if (id == R.id.nav_information) {
-            Intent i = new Intent(this, CInformation.class);
+        }else if (id == R.id.nav_course_catalog) {
+            Intent i = new Intent(this, CourseCatalog.class);
             startActivity(i);
 
             return true;
-        } else if (id == R.id.nav_traveling) {
-            Intent i = new Intent(this, Travel.class);
+        } else if (id == R.id.nav_grading_system){
+            Intent i = new Intent(getApplicationContext(), GradingSystem.class);
             startActivity(i);
 
             return true;
-        } else if (id == R.id.nav_visa_requirements){
-            Intent i = new Intent(getApplicationContext(), OVisaReq.class);
-            startActivity(i);
-
-            return true;
-        } else if (id == R.id.nav_ucontact){
-            Intent i = new Intent(getApplicationContext(), Contact.class);
-            startActivity(i);
-
-            return true;
-        } else if (id == R.id.nav_arriving_in_alba){
-            Intent i = new Intent(getApplicationContext(), OArrivingInAlba.class);
-            startActivity(i);
-
-            return true;
-        } else if (id == R.id.nav_health_care_insurance){
-            Intent i = new Intent(getApplicationContext(), OUsefulInfo.class);
+        } else if (id == R.id.nav_academic_calendar){
+            Intent i = new Intent(getApplicationContext(), AcademicCalendar.class);
             startActivity(i);
 
             return true;
         } else if (id == R.id.nav_services){
             Intent i = new Intent(getApplicationContext(), Services.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_ucontact){
+            Intent i = new Intent(getApplicationContext(), Contact.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_arriving_in_alba){
+            Intent i = new Intent(getApplicationContext(), OArrivingInAlba.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_visa_requirements){
+            Intent i = new Intent(getApplicationContext(), OVisaReq.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_useful_information){
+            Intent i = new Intent(getApplicationContext(), OUsefulInfo.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_traveling){
+            Intent i = new Intent(getApplicationContext(), Travel.class);
+            startActivity(i);
+
+            return true;
+        }else if (id == R.id.nav_about){
+            Intent i = new Intent(getApplicationContext(), About.class);
             startActivity(i);
 
             return true;

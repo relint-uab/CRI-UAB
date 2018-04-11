@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".university.RelIntDescription">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="\u0009 The implementation and organisation of European and international mobility is carried out by the Erasmus+ Office, part of the Centre for International Relations.\n\n\u0009 The 33 Programme Countries are: the 28 EU Member States, and; Iceland, Liechtenstein, Norway, the Former Yugoslav Republic of Macedonia and Turkey.\n\n\u0009 Currently, the Centre implement two International Credit Mobility projects with partner institution from Australia, Bosnia-Herzegovina, China, Columbia, Montenegro, Russia, Serbia and Uzbekistan."
+        tools:layout_editor_absoluteX="16dp"
+        android:textColor="#fff"
+        tools:layout_editor_absoluteY="16dp" />
+    
+</LinearLayout>

@@ -11,9 +11,6 @@
     <color name="actionModeBackground">#44cc00</color>
     <color name="textColorHint">#fff</color>
     <color name="colorBackgroundTrans">#00000000</color>
-    <color name="colorBackgroundTableRow">#e3e3e3</color>
-    <color name="colorBackgroundTableHead">#014c90</color>
 
     <color name="buttonPressed">#2196F3</color>
-    <color name="buttonNotPressed">#ffffff</color>
 </resources>

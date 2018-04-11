@@ -17,7 +17,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logo_autogari" />
+        app:srcCompat="@drawable/logo_autogari"
+        android:contentDescription="Autogari.ro Logo" />
 
     <ImageButton
         android:id="@+id/web_airport_cluj"
@@ -32,7 +33,8 @@
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web_autogari"
-        app:srcCompat="@drawable/logo_airport_cluj" />
+        app:srcCompat="@drawable/logo_airport_cluj"
+        android:contentDescription="Cluj Airport Logo" />
 
     <ImageButton
         android:id="@+id/web_airport_tim"
@@ -47,7 +49,8 @@
         app:layout_constraintHorizontal_bias="0.506"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web_airport_cluj"
-        app:srcCompat="@drawable/logo_aerotim" />
+        app:srcCompat="@drawable/logo_aerotim"
+        android:contentDescription="Timisoara Airport Logo" />
 
     <ImageButton
         android:id="@+id/web_airport_sibiu"
@@ -62,7 +65,9 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web_airport_tim"
-        app:srcCompat="@drawable/logo_airport_sibiu" />
+        app:srcCompat="@drawable/logo_airport_sibiu"
+        android:contentDescription="Sibiu Airport Logo"
+        tools:targetApi="o" />
 
     <ImageButton
         android:id="@+id/web_airport_buc"
@@ -74,5 +79,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/web_airport_sibiu"
-        app:srcCompat="@drawable/logo_airport_bucharest" />
+        app:srcCompat="@drawable/logo_airport_bucharest"
+        android:contentDescription="Bucharest Airport Logo" />
 </android.support.constraint.ConstraintLayout>

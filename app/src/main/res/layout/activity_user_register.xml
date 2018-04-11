@@ -10,7 +10,6 @@
 
     <!-- Sign up progress -->
     <ProgressBar
-        android:id="@+id/registration_progress"
         style="?android:attr/progressBarStyleLarge"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -18,12 +17,10 @@
         android:visibility="gone" />
 
     <ScrollView
-        android:id="@+id/registration_form"
         android:layout_width="match_parent"
         android:layout_height="640dp">
 
         <LinearLayout
-            android:id="@+id/email_registration_form"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
