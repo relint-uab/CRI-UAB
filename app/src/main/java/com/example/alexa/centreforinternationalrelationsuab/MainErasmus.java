@@ -30,6 +30,7 @@ import com.example.alexa.centreforinternationalrelationsuab.others.main.OVisaReq
 import com.example.alexa.centreforinternationalrelationsuab.others.main.Travel;
 import com.example.alexa.centreforinternationalrelationsuab.university.Contact;
 import com.example.alexa.centreforinternationalrelationsuab.university.GradingSystem;
+import com.example.alexa.centreforinternationalrelationsuab.university.Services;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserProfile;
 import com.example.alexa.centreforinternationalrelationsuab.user.UserWelcome;
 import com.firebase.ui.database.FirebaseRecyclerAdapter;
@@ -277,6 +278,11 @@ public class MainErasmus extends AppCompatActivity
             return true;
         } else if (id == R.id.nav_health_care_insurance){
             Intent i = new Intent(getApplicationContext(), OUsefulInfo.class);
+            startActivity(i);
+
+            return true;
+        } else if (id == R.id.nav_services){
+            Intent i = new Intent(getApplicationContext(), Services.class);
             startActivity(i);
 
             return true;

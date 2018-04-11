@@ -15,5 +15,5 @@
     <color name="colorBackgroundTableHead">#014c90</color>
 
     <color name="buttonPressed">#2196F3</color>
-    <color name="buttonNotPressed">#fff</color>
+    <color name="buttonNotPressed">#ffffff</color>
 </resources>

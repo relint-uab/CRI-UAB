@@ -17,8 +17,8 @@
                 android:id="@+id/nav_academic_calendar"
                 android:title="@string/uacademic_calendar_name" />
             <item
-                android:id="@+id/nav_documents"
-                android:title="@string/udocuments_name" />
+                android:id="@+id/nav_services"
+                android:title="@string/uservices_name" />
             <item
                 android:id="@+id/nav_ucontact"
                 android:title="@string/ucontact_name" />
