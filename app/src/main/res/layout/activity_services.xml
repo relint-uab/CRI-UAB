@@ -1,9 +1,233 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".university.Services">
+    android:background="@drawable/gradient"
+    tools:context="com.example.alexa.centreforinternationalrelationsuab.user.UserProfile">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:columnCount="2"
+                android:padding="12dp">
+
+                <!-- Row 1 -->
+                <!-- Column 1 -->
+                    <android.support.v7.widget.CardView
+                        android:id="@+id/card_accomodation"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_columnWeight="1"
+                        android:layout_margin="6dp"
+                        android:layout_rowWeight="1"
+                        android:background="@drawable/ripple_transparent_btn"
+                        app:cardCornerRadius="4dp"
+                        app:cardElevation="16dp">
+
+                        <ImageView
+                            android:id="@+id/accommodation_img"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/btn_rounded"
+                            android:foreground="@drawable/card_ripple_effect"
+                            android:scaleType="centerCrop"
+                            android:src="@drawable/dormitory2"
+                            android:contentDescription="@string/service_card_img" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="bottom"
+                            android:background="@android:drawable/screen_background_dark_transparent"
+                            android:text="@string/accomodation"
+                            android:textAlignment="center"
+                            android:textColor="#fff"
+                            android:textSize="12sp" />
+
+                    </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/foods"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_university_restaurant"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                </android.support.v7.widget.CardView>
+
+
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/library"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_university_library"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/health_care"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/students_health_service"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                </android.support.v7.widget.CardView>
+
+                <!-- Row 2 -->
+                <!-- Column 1 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/gradient"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/uab_logo"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/student_identification_card"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+
+                </android.support.v7.widget.CardView>
+
+                <!-- Column 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_margin="6dp"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/sport_uab"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/students_sport_centre"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                </android.support.v7.widget.CardView>
+                <!-- Row 3 -->
+                <!-- Column 1 span 2 -->
+                <android.support.v7.widget.CardView
+                    android:layout_width="0dp"
+                    android:layout_height="120dp"
+                    android:layout_rowWeight="1"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:layout_columnSpan="2"
+                    app:cardElevation="16dp"
+                    app:cardCornerRadius="4dp">
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/lsua"
+                        android:contentDescription="@string/service_card_img"/>
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/the_students_union_and_cultural_centre"
+                        android:textColor="#fff"
+                        android:textSize="12sp"
+                        android:layout_gravity="bottom"
+                        android:textAlignment="center"
+                        android:background="@android:drawable/screen_background_dark_transparent"/>
+
+                </android.support.v7.widget.CardView>
+            </GridLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

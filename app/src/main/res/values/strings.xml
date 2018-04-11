@@ -246,6 +246,14 @@
 
 
     <string name="back">Back</string>
+    <string name="service_card_img">service_card_img</string>
+    <string name="accomodation">Accomodation</string>
+    <string name="the_university_restaurant">The University Restaurant</string>
+    <string name="the_university_library">The University Library</string>
+    <string name="students_health_service">Students\' Health Service</string>
+    <string name="student_identification_card">Student Identification Card</string>
+    <string name="students_sport_centre">Students\' Sport Centre</string>
+    <string name="the_students_union_and_cultural_centre">The Students\' Union and Cultural Centre</string>
 
 
 </resources>
