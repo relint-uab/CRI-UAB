@@ -78,6 +78,15 @@
     <string name="restaurant_information_paragraph_2">\u0009 The University has a snack bar with an open-air terrace (during summer time), as well as outdoor recreational areas within the historical grounds of Alba Iulia Fortress.</string>
     <string name="restaurant_information_paragraph_3">\u0009 The University Restaurant provides lunch on a regular basis on week days; and breakfast and dinner on request only. A 3-course menu costs approx. 15 lei (3.3 Euro).</string>
 
+ <!--Services Activity-->
+    <string name="service_card_img">service_card_img</string>
+    <string name="accommodation">Accommodation</string>
+    <string name="the_university_restaurant">The University Restaurant</string>
+    <string name="the_university_library">The University Library</string>
+    <string name="students_health_service">Students\' Health Service</string>
+    <string name="student_identification_card">Student Identification Card</string>
+    <string name="students_sport_centre">Students\' Sport Centre</string>
+    <string name="the_students_union_and_cultural_centre">The Students\' Union and Cultural Centre</string>
 
     <!-- *************************************************************************************** -->
     <!-- ************ USER ********************************************************************* -->
@@ -246,14 +255,7 @@
 
 
     <string name="back">Back</string>
-    <string name="service_card_img">service_card_img</string>
-    <string name="accomodation">Accomodation</string>
-    <string name="the_university_restaurant">The University Restaurant</string>
-    <string name="the_university_library">The University Library</string>
-    <string name="students_health_service">Students\' Health Service</string>
-    <string name="student_identification_card">Student Identification Card</string>
-    <string name="students_sport_centre">Students\' Sport Centre</string>
-    <string name="the_students_union_and_cultural_centre">The Students\' Union and Cultural Centre</string>
+
 
 
 </resources>
