@@ -65,7 +65,7 @@ public class MainErasmus extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main_erasmus2);
+        setContentView(R.layout.activity_main_erasmus_student);
         mAuth = FirebaseAuth.getInstance();
 
         // Progress dialog Loading page

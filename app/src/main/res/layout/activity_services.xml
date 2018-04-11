@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/gradient"
+    android:background="@color/colorPrimary"
     tools:context="com.example.alexa.centreforinternationalrelationsuab.user.UserProfile">
 
     <ScrollView
@@ -16,7 +16,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:columnCount="2"
-                android:padding="12dp">
+                android:padding="8dp">
 
                 <!-- Row 1 -->
                 <!-- Column 1 -->
@@ -27,6 +27,8 @@
                         android:layout_columnWeight="1"
                         android:layout_margin="6dp"
                         android:layout_rowWeight="1"
+                        android:clickable="true"
+                        android:focusable="true"
                         android:background="@drawable/ripple_transparent_btn"
                         app:cardCornerRadius="4dp"
                         app:cardElevation="16dp">
@@ -60,6 +62,8 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardElevation="16dp"
                     app:cardCornerRadius="4dp">
 
@@ -90,6 +94,8 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardElevation="16dp"
                     app:cardCornerRadius="4dp">
 
@@ -119,6 +125,8 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardElevation="16dp"
                     app:cardCornerRadius="4dp">
 
@@ -148,6 +156,8 @@
                     android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardElevation="16dp"
                     app:cardCornerRadius="4dp">
 
@@ -178,6 +188,8 @@
                     android:layout_columnWeight="1"
                     android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:clickable="true"
+                    android:focusable="true"
                     app:cardElevation="16dp"
                     app:cardCornerRadius="4dp">
 
@@ -216,6 +228,8 @@
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
                         android:src="@drawable/lsua"
+                        android:clickable="true"
+                        android:focusable="true"
                         android:contentDescription="@string/service_card_img"/>
                     <TextView
                         android:layout_width="match_parent"
