@@ -82,10 +82,6 @@
             android:name=".user.SelectAccountType"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity
-            android:name=".campus.CInformation"
-            android:label="@string/cinformation_name"
-            android:screenOrientation="portrait" />
         <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
         <activity android:name=".others.main.OArrivingInAlba" />
         <activity android:name=".university.GradingSystem" />
