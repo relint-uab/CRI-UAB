@@ -54,6 +54,14 @@
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
+            android:name=".user.UserRegister"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
+            android:name=".user.SelectAccountType"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".user.UserProfile"
             android:screenOrientation="portrait"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
@@ -61,10 +69,7 @@
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
             android:theme="@style/Base.Theme.AppCompat" />
-        <activity
-            android:name=".user.UserRegister"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+
         <activity
             android:name=".MainActivity"
             android:label="@string/title_activity_main_international_students"
@@ -78,23 +83,28 @@
             android:name=".MainErasmusAcademic"
             android:label="@string/title_activity_main_erasmus_academic"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".user.SelectAccountType"
-            android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
-        <activity android:name=".others.main.OArrivingInAlba" />
-        <activity android:name=".university.GradingSystem" />
+
+        <activity android:name=".university.AcademicCalendar" />
+        <activity android:name=".university.CourseCatalog" />
+        <activity android:name=".university.Contact" />
+        <activity android:name=".university.GradingSystem"/>
+        <activity android:name=".university.RelIntDescription" />
         <activity
             android:name=".others.main.Travel"
             android:theme="@style/Theme.AppCompat.NoActionBar" />
-        <activity android:name=".university.Contact" />
         <activity android:name=".others.main.OVisaReq" />
         <activity android:name=".others.main.OUsefulInfo" />
-        <activity android:name=".others.secondary.OUsefulInfoPosta" />
-        <activity android:name=".others.secondary.OUsefulInfoTelekom" />
-        <activity android:name=".others.secondary.OUsefulInfoOrange" />
-        <activity android:name=".others.secondary.OUsefulInfoVodafone" />
+        <activity android:name=".others.secondary.OUsefulInfoPosta"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".others.secondary.OUsefulInfoTelekom"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".others.secondary.OUsefulInfoOrange"
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".others.secondary.OUsefulInfoVodafone"
+            android:theme="@style/AppTheme.NoActionBar"/>
+
+        <activity android:name=".others.main.OArrivingInAlba" />
+        <activity android:name=".others.secondary.OArrivingInAlbaTrains" />
         <activity android:name=".others.secondary.OArrivingInAlbaAutogari" />
         <activity android:name=".others.secondary.OArrivingInAlbaAirBuc" />
         <activity android:name=".others.secondary.OArrivingInAlbaAirSibiu" />

@@ -6,10 +6,11 @@
     tools:context=".others.secondary.OUsefulInfoVodafone">
 
     <WebView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/webview_vodafone"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="8dp"
-        tools:layout_editor_absoluteY="280dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="280dp" />
 
 </android.support.constraint.ConstraintLayout>

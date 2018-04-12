@@ -20,69 +20,70 @@
 
                 <!-- Row 1 -->
                 <!-- Column 1 -->
-                    <android.support.v7.widget.CardView
-                        android:id="@+id/card_accommodation"
-                        android:layout_width="0dp"
-                        android:layout_height="0dp"
-                        android:layout_columnWeight="1"
-                        android:layout_margin="6dp"
-                        android:layout_rowWeight="1"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:background="@drawable/ripple_transparent_btn"
-                        app:cardCornerRadius="4dp"
-                        app:cardElevation="16dp">
+                <android.support.v7.widget.CardView
+                    android:id="@+id/card_accommodation"
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_columnWeight="1"
+                    android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
+                    android:background="@drawable/ripple_transparent_btn"
+                    android:clickable="true"
+                    android:focusable="true"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
-                        <ImageView
-                            android:id="@+id/accommodation_img"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:background="@drawable/btn_rounded"
-                            android:foreground="@drawable/card_ripple_effect"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/dormitory2"
-                            android:contentDescription="@string/service_card_img" />
+                    <ImageView
+                        android:id="@+id/accommodation_img"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/btn_rounded"
+                        android:contentDescription="@string/service_card_img"
+                        android:foreground="@drawable/card_ripple_effect"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/dormitory2" />
 
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_gravity="bottom"
-                            android:background="@android:drawable/screen_background_dark_transparent"
-                            android:text="@string/accommodation"
-                            android:textAlignment="center"
-                            android:textColor="#fff"
-                            android:textSize="12sp" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/accommodation"
+                        android:textAlignment="center"
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
 
-                    </android.support.v7.widget.CardView>
+                </android.support.v7.widget.CardView>
 
                 <!-- Column 2 -->
                 <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@string/service_card_img"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/foods"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/foods" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
                         android:text="@string/the_university_restaurant"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
-                        android:layout_gravity="bottom"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
                 </android.support.v7.widget.CardView>
 
 
@@ -91,30 +92,31 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@string/service_card_img"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/library"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/library" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/the_university_library"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
                         android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/the_university_library"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
 
                 </android.support.v7.widget.CardView>
 
@@ -123,29 +125,30 @@
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@string/service_card_img"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/health_care"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/health_care" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/students_health_service"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
                         android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/students_health_service"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
                 </android.support.v7.widget.CardView>
 
                 <!-- Row 2 -->
@@ -153,31 +156,32 @@
                 <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="0dp"
-                    android:layout_rowWeight="1"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:background="@drawable/gradient"
+                        android:contentDescription="@string/service_card_img"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/uab_logo"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/uab_logo" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/student_identification_card"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
                         android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/student_identification_card"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
 
                 </android.support.v7.widget.CardView>
 
@@ -186,60 +190,62 @@
                     android:layout_width="0dp"
                     android:layout_height="120dp"
                     android:layout_columnWeight="1"
-                    android:layout_rowWeight="1"
                     android:layout_margin="6dp"
+                    android:layout_rowWeight="1"
                     android:clickable="true"
                     android:focusable="true"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:contentDescription="@string/service_card_img"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/sport_uab"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/sport_uab" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/students_sport_centre"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
                         android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/students_sport_centre"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
                 </android.support.v7.widget.CardView>
                 <!-- Row 3 -->
                 <!-- Column 1 span 2 -->
                 <android.support.v7.widget.CardView
                     android:layout_width="0dp"
                     android:layout_height="120dp"
-                    android:layout_rowWeight="1"
+                    android:layout_columnSpan="2"
                     android:layout_columnWeight="1"
                     android:layout_margin="6dp"
-                    android:layout_columnSpan="2"
-                    app:cardElevation="16dp"
-                    app:cardCornerRadius="4dp">
+                    android:layout_rowWeight="1"
+                    app:cardCornerRadius="4dp"
+                    app:cardElevation="8dp">
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:clickable="true"
+                        android:contentDescription="@string/service_card_img"
+                        android:focusable="true"
                         android:foreground="@drawable/card_ripple_effect"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/lsua"
-                        android:clickable="true"
-                        android:focusable="true"
-                        android:contentDescription="@string/service_card_img"/>
+                        android:src="@drawable/lsua" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:text="@string/the_students_union_and_cultural_centre"
-                        android:textColor="#fff"
-                        android:textSize="12sp"
                         android:layout_gravity="bottom"
+                        android:background="@android:drawable/screen_background_dark_transparent"
+                        android:text="@string/the_students_union_and_cultural_centre"
                         android:textAlignment="center"
-                        android:background="@android:drawable/screen_background_dark_transparent"/>
+                        android:textColor="#fff"
+                        android:textSize="12sp" />
 
                 </android.support.v7.widget.CardView>
             </GridLayout>

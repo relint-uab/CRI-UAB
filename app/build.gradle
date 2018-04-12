@@ -67,6 +67,7 @@ dependencies {
     implementation 'com.github.d-max:spots-dialog:0.7@aar'
     // button animation
     implementation 'me.spark:submitbutton:1.0.1'
+    implementation 'com.android.support:gridlayout-v7:27.1.1'
 }
 
 
