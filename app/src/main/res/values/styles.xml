@@ -82,4 +82,24 @@
         <item name="DialogSpotCount">4</item>
     </style>
 
+    <style name="Login" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Small</item>
+        <item name="DialogTitleText">Login...</item>
+        <item name="DialogSpotColor">#00aaf9</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
+    <style name="Register" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Small</item>
+        <item name="DialogTitleText">Processing...</item>
+        <item name="DialogSpotColor">#00aaf9</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+    <style name="ResetPassword" parent="android:Theme.DeviceDefault.Dialog">
+        <item name="DialogTitleAppearance">@android:style/TextAppearance.Small</item>
+        <item name="DialogTitleText">Sending reset password email...</item>
+        <item name="DialogSpotColor">#00aaf9</item>
+        <item name="DialogSpotCount">4</item>
+    </style>
+
 </resources>

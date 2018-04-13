@@ -3,6 +3,8 @@ package com.example.alexa.centreforinternationalrelationsuab.user;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -28,6 +30,8 @@ import java.util.HashMap;
 import java.util.Map;
 
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
+
+import dmax.dialog.SpotsDialog;
 
 public class UserRegister extends AppCompatActivity {
 
@@ -98,14 +102,19 @@ public class UserRegister extends AppCompatActivity {
     }
 
     private void sendRequest(final String mail, final String password) {
-        final ProgressDialog progressDialog = ProgressDialog.show(UserRegister.this, "Please wait...", "Processing...", true);
+        //final ProgressDialog progressDialog = ProgressDialog.show(UserRegister.this, "Please wait...", "Processing...", true);
+        // Progress dialog Loading page
+        final SpotsDialog mProgressRegister = new SpotsDialog(this, R.style.Register);
+        mProgressRegister.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        mProgressRegister.show();
         (firebaseAuth.createUserWithEmailAndPassword(mail, password))
                 .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                     @Override
                     public void onComplete(@NonNull Task<AuthResult> task) {
 
                         if (!task.isSuccessful()) {
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
+                            mProgressRegister.dismiss();
                             if (task.getException() instanceof FirebaseAuthUserCollisionException) {
                                 StyleableToast.makeText(getApplicationContext(), task.getException().getMessage(), R.style.errorToast).show();
                                // Toast.makeText(getApplicationContext(), "User with this email already exist.", Toast.LENGTH_SHORT).show();
@@ -134,7 +143,8 @@ public class UserRegister extends AppCompatActivity {
                             mUserDatabase = mUserDatabase.child(mCurrentUserUid);
                             mUserDatabase.setValue(userData);
 
-                            progressDialog.dismiss();
+                            //progressDialog.dismiss();
+                            mProgressRegister.dismiss();
 
                             StyleableToast.makeText(getApplicationContext(), "Registration successful.\n Please confirm your email before login", R.style.successToast).show();
                             // Toast.makeText(UserRegister.this, "Registration successful. Please confirm your email before login", Toast.LENGTH_SHORT).show();

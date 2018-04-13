@@ -3,7 +3,10 @@ package com.example.alexa.centreforinternationalrelationsuab.user;
 import android.app.ProgressDialog;
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
@@ -30,6 +33,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
 
 import java.util.Objects;
+
+import dmax.dialog.SpotsDialog;
 
 public class UserAuthentication extends AppCompatActivity {
 
@@ -62,13 +67,19 @@ public class UserAuthentication extends AppCompatActivity {
                 if (TextUtils.isEmpty(txtPwd.getText())){
                     StyleableToast.makeText(getApplicationContext(), "Please complete all fields", R.style.errorToast).show();
                 } else {
-                   final ProgressDialog progressDialog = ProgressDialog.show(UserAuthentication.this, "Please wait...", "Processing...", true);
+                   //final ProgressDialog progressDialog = ProgressDialog.show(UserAuthentication.this, "Please wait...", "Processing...", true);
+                    // Progress dialog Loading page
+                     final SpotsDialog mProgressLogin = new SpotsDialog(this, R.style.Login);
+                    mProgressLogin.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                    mProgressLogin.show();
+
+
+
                    (firebaseAuth.signInWithEmailAndPassword(txtEmailLogin.getText().toString(), txtPwd.getText().toString()))
                     .addOnCompleteListener(new OnCompleteListener<AuthResult>() {
                         @Override
                         public void onComplete(@NonNull Task<AuthResult> task) {
-                            progressDialog.dismiss();
-
+                            //progressDialog.dismiss();
                             if (task.isSuccessful()) {
                                 FirebaseUser user = firebaseAuth.getCurrentUser();
 

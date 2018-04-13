@@ -1,5 +1,8 @@
 package com.example.alexa.centreforinternationalrelationsuab.user;
 
+import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +20,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.muddzdev.styleabletoastlibrary.StyleableToast;
+
+import dmax.dialog.SpotsDialog;
 
 public class UserForgotPassword extends AppCompatActivity {
 
@@ -36,18 +41,16 @@ public class UserForgotPassword extends AppCompatActivity {
         auth = FirebaseAuth.getInstance();
 
         //Back button
-        if(getSupportActionBar()!=null){
+        if(getSupportActionBar()!= null){
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
             getSupportActionBar().setDisplayShowHomeEnabled(true);
         }
-
 
         btnReset.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
                 String email = inputEmail.getText().toString().trim();
-
                 if (TextUtils.isEmpty(email)) {
                     StyleableToast.makeText(getApplicationContext(), "Enter your registered email address!", R.style.errorToast).show();
                     //Toast.makeText(getApplication(), "Enter your registered email id", Toast.LENGTH_SHORT).show();
@@ -63,14 +66,20 @@ public class UserForgotPassword extends AppCompatActivity {
                         .addOnCompleteListener(new OnCompleteListener<Void>() {
                             @Override
                             public void onComplete(@NonNull Task<Void> task) {
+
                                 if (task.isSuccessful()) {
-                                    Toast.makeText(UserForgotPassword.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+                                    StyleableToast.makeText(getApplicationContext(), "We have sent you instructions to reset your password!", R.style.successToast).show();
+                                    //Toast.makeText(UserForgotPassword.this, "We have sent you instructions to reset your password!", Toast.LENGTH_SHORT).show();
+
                                 } else {
                                     StyleableToast.makeText(getApplicationContext(), "Failed to send reset email!", R.style.errorToast).show();
                                     //Toast.makeText(UserForgotPassword.this, "Failed to send reset email!", Toast.LENGTH_SHORT).show();
                                 }
 
                                 progressBar.setVisibility(View.GONE);
+                                Intent intent = new Intent(getApplicationContext(), UserAuthentication.class);
+                                startActivity(intent);
+                                finish();
                             }
                         });
             }

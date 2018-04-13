@@ -56,7 +56,7 @@
         <activity
             android:name=".user.UserRegister"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/Theme.Design.NoActionBar" />
         <activity
             android:name=".user.SelectAccountType"
             android:screenOrientation="portrait"
@@ -64,7 +64,7 @@
         <activity
             android:name=".user.UserProfile"
             android:screenOrientation="portrait"
-            android:theme="@style/Theme.AppCompat.NoActionBar" />
+            android:theme="@style/AppTheme.NoActionBar" />
         <!-- To use the crop function add the next activity -->
         <activity
             android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
@@ -86,7 +86,7 @@
 
         <activity android:name=".university.AcademicCalendar" />
         <activity android:name=".university.CourseCatalog" />
-        <activity android:name=".university.Contact" />
+        <activity android:name=".university.Contact" android:theme="@style/AppTheme.NoActionBar"/>
         <activity android:name=".university.GradingSystem"/>
         <activity android:name=".university.RelIntDescription" />
         <activity

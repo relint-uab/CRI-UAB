@@ -124,6 +124,8 @@
                 android:layout_marginTop="80dp"
                 android:text="Clicking Create Account means that you are agree to the Terms &amp; Conditions and Privacy Policy."
                 android:textAlignment="center"
+                android:textColor="#fff"
+                android:textSize="10sp"
                 android:gravity="bottom"/>
 
         </LinearLayout>
